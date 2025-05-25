@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Literature Review}{3}
+\contentsline {subsection}{\numberline {2.1}Nonlinearity and Regularization in ML Forecasting}{3}
+\contentsline {subsection}{\numberline {2.2}Automating Forecasting with ML Techniques}{3}
+\contentsline {subsection}{\numberline {2.3}ML Applications in China's GDP Forecasting}{3}
+\contentsline {subsection}{\numberline {2.4}Synthesis and Implications for Current Research}{4}
+\contentsline {section}{\numberline {3}Data and Methods}{4}
+\contentsline {subsection}{\numberline {3.1}Data Source}{4}
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{5}
+\contentsline {subsection}{\numberline {3.3}Machine Learning Models}{5}
+\contentsline {subsection}{\numberline {3.4}Experimental Setup}{6}
+\contentsline {section}{\numberline {4}Cross-Indicator Analysis}{7}
+\contentsline {subsection}{\numberline {4.1}Prediction Task}{7}
+\contentsline {subsection}{\numberline {4.2}Prediction Results}{7}
+\contentsline {subsection}{\numberline {4.3}Discussion}{8}
+\contentsline {subsection}{\numberline {4.4}Hyperparameter Tuning for XGBoost and Random Forest}{10}
+\contentsline {section}{\numberline {5}Country-Level Time Series Analysis}{12}
+\contentsline {subsection}{\numberline {5.1}Temporal Feature Construction}{12}
+\contentsline {subsection}{\numberline {5.2}Forecasting Setup}{12}
+\contentsline {subsection}{\numberline {5.3}Model Comparison}{12}
+\contentsline {subsection}{\numberline {5.4}Case Study: [Insert Country]}{12}
+\contentsline {subsection}{\numberline {5.5}Discussion}{12}
+\contentsline {section}{\numberline {6}Cross-Country Time Series Analysis}{12}
+\contentsline {subsection}{\numberline {6.1}Selection of Major Economies}{12}
+\contentsline {subsection}{\numberline {6.2}Modeling Setup}{12}
+\contentsline {subsection}{\numberline {6.3}Cross-National Forecasting}{12}
+\contentsline {subsection}{\numberline {6.4}Trend and Volatility Analysis}{12}
+\contentsline {subsection}{\numberline {6.5}Discussion}{12}
+\contentsline {section}{\numberline {7}Conclusion}{12}
