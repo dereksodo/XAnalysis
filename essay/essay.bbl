@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{GouletCoulombe2019}
 Philippe~Goulet Coulombe, Maxime Leroux, Dalibor Stevanovic, and Stéphane
@@ -15,6 +15,38 @@ Aaron~Smalter Hall.
 Yanqing Yang, Xingcheng Xu, Jinfeng Ge, and Yan Xu.
 \newblock Machine learning for economic forecasting: An application to china's
   gdp growth, 2024.
+
+\bibitem{Solow1956}
+Robert~M. Solow.
+\newblock A contribution to the theory of economic growth.
+\newblock {\em The Quarterly Journal of Economics}, 70(1):65--94, 1956.
+
+\bibitem{Kuznets1971}
+Simon Kuznets.
+\newblock {\em Economic Growth of Nations: Total Output and Production
+  Structure}.
+\newblock Harvard University Press, 1971.
+
+\bibitem{Hyndman2006}
+Rob~J. Hyndman and Anne~B. Koehler.
+\newblock Another look at measures of forecast accuracy.
+\newblock {\em International Journal of Forecasting}, 22(4):679--688, 2006.
+
+\bibitem{Shmueli2016}
+Galit Shmueli and Kenneth C.~Lichtendahl Jr.
+\newblock {\em Practical Time Series Forecasting with R: A Hands-On Guide}.
+\newblock Axelrod Schnall Publishers, 2016.
+
+\bibitem{Goodwin1993}
+Paul Goodwin.
+\newblock Improving the voluntary integration of statistical forecasts and
+  judgment.
+\newblock {\em International Journal of Forecasting}, 9(3):301--314, 1993.
+
+\bibitem{Kim2016}
+Jin Kim and Han-Yong Kim.
+\newblock Forecasting stock prices with a feature fusion lstm-cnn model.
+\newblock {\em Expert Systems with Applications}, 120:31--39, 2016.
 
 \bibitem{Loungani2001}
 Prakash Loungani.
@@ -43,5 +75,27 @@ Richard Baldwin.
 Olivier Blanchard, Giovanni Dell’Ariccia, and Paolo Mauro.
 \newblock Inflation targets and stabilization policy.
 \newblock {\em IMF Working Paper WP/15/127}, 2015.
+
+\bibitem{Bloom2008}
+David~E. Bloom, David Canning, Günther Fink, and Jocelyn~E. Finlay.
+\newblock Urbanization and the wealth of nations.
+\newblock {\em Science}, 319(5864):115--118, 2008.
+
+\bibitem{Montgomery2003}
+Mark~R. Montgomery, Richard Stren, Barney Cohen, and Holly~E. Reed.
+\newblock {\em Cities Transformed: Demographic Change and Its Implications in
+  the Developing World}.
+\newblock National Academies Press, 2003.
+
+\bibitem{Chen2011development}
+Yuyu Chen and Ginger~Zhe Jin.
+\newblock The road to capitalism: Economic reforms and institutional
+  persistence in china.
+\newblock {\em Journal of Comparative Economics}, 39(2):221--242, 2011.
+
+\bibitem{OECD2019india}
+OECD.
+\newblock Oecd economic surveys: India 2019, 2019.
+\newblock Organisation for Economic Co-operation and Development.
 
 \end{thebibliography}

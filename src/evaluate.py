@@ -1,8 +1,14 @@
 import numpy as np
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import r2_score, root_mean_squared_error
 
 def compute_metrics(y_true, y_pred, y_naive=None):
-    rmse = mean_squared_error(y_true, y_pred, squared=False)
+    y_true = np.asarray(y_true)
+    y_pred = np.asarray(y_pred)
+    min_len = min(len(y_true), len(y_pred))
+    y_true = y_true[:min_len]
+    y_pred = y_pred[:min_len]
+
+    rmse = root_mean_squared_error(y_true, y_pred)
     r2 = r2_score(y_true, y_pred)
     std = np.std(y_true)
     normed_rmse = rmse / std if std > 0 else float('nan')

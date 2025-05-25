@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 MAY 2025 13:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  25 MAY 2025 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -304,27 +304,28 @@ Overfull \hbox (16.47328pt too wide) in paragraph at lines 64--65
  []
 
 [4] [5] [6]
-<Average_RMSE_STD_figure1.png, id=34, 722.7pt x 361.35pt>
+<Average_RMSE_STD_figure1.png, id=32, 722.7pt x 361.35pt>
 File: Average_RMSE_STD_figure1.png Graphic file (type png)
 <use Average_RMSE_STD_figure1.png>
 Package pdftex.def Info: Average_RMSE_STD_figure1.png  used on input line 170.
 (pdftex.def)             Requested size: 225.4804pt x 112.73964pt.
-<Average_R2_figure1.png, id=36, 722.7pt x 361.35pt>
+<Average_R2_figure1.png, id=34, 722.7pt x 361.35pt>
 File: Average_R2_figure1.png Graphic file (type png)
 <use Average_R2_figure1.png>
 Package pdftex.def Info: Average_R2_figure1.png  used on input line 176.
 (pdftex.def)             Requested size: 225.4804pt x 112.73964pt.
-<Average_MASE_figure2.png, id=37, 722.7pt x 361.35pt>
+ [7]
+<Average_MASE_figure2.png, id=41, 722.7pt x 361.35pt>
 File: Average_MASE_figure2.png Graphic file (type png)
 <use Average_MASE_figure2.png>
 Package pdftex.def Info: Average_MASE_figure2.png  used on input line 186.
 (pdftex.def)             Requested size: 225.4804pt x 112.73964pt.
-<Average_DA_figure2.png, id=38, 722.7pt x 361.35pt>
+<Average_DA_figure2.png, id=42, 722.7pt x 361.35pt>
 File: Average_DA_figure2.png Graphic file (type png)
 <use Average_DA_figure2.png>
 Package pdftex.def Info: Average_DA_figure2.png  used on input line 192.
 (pdftex.def)             Requested size: 225.4804pt x 112.73964pt.
-<Feasibility_Rate_Line_Overlay_figure3.png, id=39, 722.7pt x 361.35pt>
+<Feasibility_Rate_Line_Overlay_figure3.png, id=43, 722.7pt x 361.35pt>
 File: Feasibility_Rate_Line_Overlay_figure3.png Graphic file (type png)
 <use Feasibility_Rate_Line_Overlay_figure3.png>
 Package pdftex.def Info: Feasibility_Rate_Line_Overlay_figure3.png  used on input line 200.
@@ -333,41 +334,65 @@ Package pdftex.def Info: Feasibility_Rate_Line_Overlay_figure3.png  used on inpu
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_RMSE_STD_figure1.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_R2_figure1.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_MASE_figure2.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_DA_figure2.png>]
-<1960_2020_XGB.png, id=48, 1004.553pt x 354.123pt>
+<1960_2020_XGB.png, id=44, 1004.553pt x 354.123pt>
 File: 1960_2020_XGB.png Graphic file (type png)
 <use 1960_2020_XGB.png>
 Package pdftex.def Info: 1960_2020_XGB.png  used on input line 216.
 (pdftex.def)             Requested size: 446.26582pt x 157.31676pt.
-<1960_2020_XGB_mase_da.png, id=49, 1004.19165pt x 354.123pt>
+<1960_2020_XGB_mase_da.png, id=45, 1004.19165pt x 354.123pt>
 File: 1960_2020_XGB_mase_da.png Graphic file (type png)
 <use 1960_2020_XGB_mase_da.png>
 Package pdftex.def Info: 1960_2020_XGB_mase_da.png  used on input line 220.
 (pdftex.def)             Requested size: 446.26582pt x 157.37079pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_RMSE_STD_figure1.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_R2_figure1.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_MASE_figure2.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_DA_figure2.png>] [9 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Feasibility_Rate_Line_Overlay_figure3.png>] [10 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_mase_da.png>]
+<featurewise_and_modelwise_improvement.png, id=62, 1156.32pt x 433.62pt>
+File: featurewise_and_modelwise_improvement.png Graphic file (type png)
+<use featurewise_and_modelwise_improvement.png>
+Package pdftex.def Info: featurewise_and_modelwise_improvement.png  used on input line 273.
+(pdftex.def)             Requested size: 469.75502pt x 176.15768pt.
+ [11] [12 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/featurewise_and_modelwise_improvement.png>]
+<figure4.png, id=71, 1011.78pt x 722.7pt>
+File: figure4.png Graphic file (type png)
+<use figure4.png>
+Package pdftex.def Info: figure4.png  used on input line 319.
+(pdftex.def)             Requested size: 469.75502pt x 335.54475pt.
+
+Underfull \hbox (badness 1466) in paragraph at lines 320--320
+[]\OT1/cmr/m/n/12 Figure 6: |Com-par-i-son of model per-for-mance across in-di-ca-tors us-ing four met-rics:
+ []
+
+[13]
+Overfull \hbox (4.66751pt too wide) in paragraph at lines 326--327
+\OT1/cmr/m/n/12 be-low the cut-off of 1. The ex-cep-tion is GDP growth rate, where all mod-els ex-hibit RMSE/STD
+ []
+
+[14 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/figure4.png>]
+<figure8.png, id=80, 1011.78pt x 722.7pt>
+File: figure8.png Graphic file (type png)
+<use figure8.png>
+Package pdftex.def Info: figure8.png  used on input line 344.
+(pdftex.def)             Requested size: 469.75502pt x 335.54475pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Feasibility_Rate_Line_Overlay_figure3.png>] [9 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_mase_da.png>]
-<featurewise_and_modelwise_improvement.png, id=59, 1156.32pt x 433.62pt>
-File: featurewise_and_modelwise_improvement.png Graphic file (type png)
-<use featurewise_and_modelwise_improvement.png>
-Package pdftex.def Info: featurewise_and_modelwise_improvement.png  used on input line 268.
-(pdftex.def)             Requested size: 469.75502pt x 176.15768pt.
- [10] [11 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/featurewise_and_modelwise_improvement.png>] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [12]) [13] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux) ) 
+[15] [16 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/figure8.png>] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [17]) [18] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux) ) 
 Here is how much of TeX's memory you used:
- 4548 strings out of 492649
- 70978 string characters out of 6129622
- 142988 words of memory out of 5000000
- 8332 multiletter control sequences out of 15000+600000
+ 4571 strings out of 492649
+ 71320 string characters out of 6129622
+ 141116 words of memory out of 5000000
+ 8353 multiletter control sequences out of 15000+600000
  13840 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,1162b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (13 pages, 952602 bytes).
+ 59i,12n,94p,1357b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (18 pages, 1999395 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 151 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
