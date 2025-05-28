@@ -1,0 +1,11 @@
+target,best_params,rmse,std,rmse/std,r2,mase,da
+SP.DYN.LE00.IN,"{'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.6}",1.3329086293934629,6.463654045390754,0.20621596082234056,0.9574749775021189,0.09210012646819624,0.9534883720930233
+SP.URB.TOTL.IN.ZS,"{'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 1.0}",1.7499564978717181,15.436263679167501,0.113366584961452,0.9871480174141779,0.06356179158785595,0.9534883720930233
+NV.AGR.TOTL.ZS,"{'colsample_bytree': 0.6, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}",0.8227529441830018,4.9391157515826745,0.1665789962341663,0.9722514380136176,0.07789502196738525,1.0
+EG.USE.PCAP.KG.OE,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 200, 'subsample': 1.0}",199.8297417037311,1646.2845949006744,0.1213822581604048,0.9852663474038809,0.05362419676686897,1.0
+FS.AST.PRVT.GD.ZS,"{'colsample_bytree': 0.6, 'learning_rate': 0.05, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.8}",7.163705321517816,45.86209688436216,0.1562009983882892,0.9756012481025017,0.0890251640325982,0.9534883720930233
+NE.IMP.GNFS.ZS,"{'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}",1.2172590753358565,8.073015671473735,0.15078121050069074,0.9772650265599464,0.08972423848751249,1.0
+NY.GDP.MKTP.CD,"{'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.6}",309012818111.4827,4528927272204.676,0.0682309075723037,0.9953445432518597,0.037006388372679215,1.0
+NE.EXP.GNFS.ZS,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.8}",1.961861929021362,9.31720388746747,0.21056337853250737,0.955663063620976,0.11145693935887872,1.0
+NY.GDP.MKTP.KD.ZG,"{'colsample_bytree': 0.6, 'learning_rate': 0.05, 'max_depth': 7, 'n_estimators': 50, 'subsample': 0.6}",2.9136132254060945,2.9797868584812193,0.9777924944910814,0.043921837716908385,0.5751351907314752,0.7441860465116279
+EN.ATM.GHGT.KT.CE,"{'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}",380430.1835210605,1949473.966334803,0.19514504429946583,0.9619184116853595,0.07807766120618878,1.0
