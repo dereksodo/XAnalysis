@@ -83,7 +83,7 @@ def plot_tuning_metrics(df_res, start_year, end_year, model_name, save_dir):
     plt.tight_layout()
     fig.align_ylabels(axes)
 
-    fname = f"{save_dir}/{start_year}_{end_year}_{model_name}_metrics.png"
+    fname = f"{save_dir}/{start_year}_{end_year}_{model_name}_tuning_metrics.png"
     os.makedirs(os.path.dirname(fname), exist_ok=True)
     plt.savefig(fname, dpi=300, bbox_inches="tight")
     plt.close()

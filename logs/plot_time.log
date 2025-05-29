@@ -1,0 +1,14 @@
+Model folders detected: ['Rolling_XGB_lag3', 'Rolling_XGB_lag2', 'Naive', 'ARIMA']
+
+[INFO] Processing model: Rolling_XGB_lag3
+[INFO] Completed model: Rolling_XGB_lag3
+
+[INFO] Processing model: Rolling_XGB_lag2
+[INFO] Completed model: Rolling_XGB_lag2
+
+[INFO] Processing model: Naive
+[INFO] Completed model: Naive
+
+[INFO] Processing model: ARIMA
+[INFO] Completed model: ARIMA
+Figure saved to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5/predictions/featurewise_model_comparison.png

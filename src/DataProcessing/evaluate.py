@@ -8,6 +8,23 @@ def compute_metrics(y_true, y_pred, y_naive=None):
     y_true = y_true[:min_len]
     y_pred = y_pred[:min_len]
 
+    if np.isclose(np.std(y_true), 0):
+        if np.isclose(np.std(y_pred), 0):
+            rmse_std, rmse, std, mase = 0.0, 0.0, 0.0, 0.0
+            r2 = 1.0
+            da = 0.5
+        else:
+            rmse_std, rmse, std, mase = 9.99, 9.99, 9.99, 9.99
+            r2, da = -1.0, 0.5
+        return {
+                "rmse": rmse,
+                "std": std,
+                "rmse/std": rmse_std,
+                "r2": r2,
+                "mase": mase,
+                "da": da
+            }
+
     rmse = root_mean_squared_error(y_true, y_pred)
     r2 = r2_score(y_true, y_pred)
     std = np.std(y_true)

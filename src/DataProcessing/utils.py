@@ -57,9 +57,9 @@ class get_scores:
     @staticmethod
     def guiding_score(metrics):
         sigmoid = lambda x: 1 / (1 + np.exp(-x))
-        rmse_std = metrics["rmse/std"]
-        r2 = metrics["r2"]
-        mase = metrics["mase"]
+        rmse_std = min(metrics["rmse/std"], 10)
+        r2 = max(metrics["r2"], -10)
+        mase = min(metrics["mase"], 10)
         da = metrics["da"]
         score = (
             5 * sigmoid((da - 0.7) / 0.7) +

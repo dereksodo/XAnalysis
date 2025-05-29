@@ -167,7 +167,7 @@ For each indicator $F_k$, we predict its value for each country-year using the r
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{1960_2020_XGB_metrics_basic.png}
+    \includegraphics[width=\textwidth]{1960_2020_XGB_metrics.png}
     \caption{Prediction performance of XGBoost for each feature (1960--2020), including RMSE/STD, $R^2$, MASE, and Directional Accuracy.}
     \label{fig:xgb_feature_summary}
 \end{figure}
@@ -183,7 +183,7 @@ From Figure~\ref{fig:model_compare_1} and Figure~\ref{fig:model_compare_2}, We c
 Figure~\ref{fig:xgb_feature_summary} summarizes the prediction performance of XGBoost for each of the 10 selected indicators over the full period (1960--2020). The results indicate that XGBoost achieves high accuracy for most structural indicators, with standardized errors (RMSE/STD) well below 1 and $R^2$ values typically above 0.6. Notably, indicators such as life expectancy, urban population share, and energy use are predicted with particularly high precision. In contrast, GDP growth (annual \%) stands out as the only indicator with consistently poor predictive performance, exhibiting both high error and low explanatory power. The poor predictability of the GDP growth rate compared to other major indicators is primarily due to its intrinsic volatility, exposure to a broad set of unobserved influences, and its weak contemporaneous linkages with slow-moving structural features. This is a well-documented phenomenon in economic modeling ~\cite{Loungani2001, ClementsHendry2002}, where forecasting economic growth remains an exceptionally challenging task.
 
 
-\subsection{Hyperparameter Tuning for XGBoost and Random Forest}
+\subsection{Hyperparameter Tuning}
 
 To ensure robust performance from the ensemble models, we conducted hyperparameter tuning for both XGBoost (XGB) and Random Forest (RF) using grid search with 5-fold cross-validation.
 
@@ -203,18 +203,18 @@ For Random Forest, the tuning focused on:
     \item \texttt{min\_samples\_split}: Minimum number of samples required to split an internal node.
     \item \texttt{max\_features}: Number of features to consider when looking for the best split.
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.9\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{1960_2020_XGB_metrics.png}
+        \includegraphics[width=\linewidth]{1960_2020_XGB_tuning_metrics.png}
         \caption{XGBoost: Tuning Performance (1960--2020)}
         \label{fig:xgb_tuning_1960_2020}
     \end{subfigure}
     \vspace{1em}
     \begin{subfigure}[t]{0.9\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{1960_2020_RF_metrics.png}
+        \includegraphics[width=\linewidth]{1960_2020_RF_tuning_metrics.png}
         \caption{Random Forest: Tuning Performance (1960--2020)}
         \label{fig:rf_tuning_1960_2020}
     \end{subfigure}
@@ -259,8 +259,6 @@ We evaluated six models for each country and each target indicator:
 \begin{itemize}
     \item \textbf{Naive Forecast}: Uses the value of the previous year as the prediction for the next year.
     \item \textbf{ARIMA}: A univariate autoregressive model applied independently to each target series.
-    \item \textbf{XGB-lag2}: A gradient-boosted decision tree using lag-2 features of all other variables to predict the target.
-    \item \textbf{XGB-lag3}: Similar to the above, but with lag-3 features.
     \item \textbf{Rolling XGB-lag2}: Same as XGB-lag2, but predictions are generated year-by-year using only prior data up to that year (rolling forecast).
     \item \textbf{Rolling XGB-lag3}: Extends the rolling forecast logic to lag-3 input features.
 \end{itemize}
@@ -268,116 +266,104 @@ We evaluated six models for each country and each target indicator:
 The rolling forecast strategy better simulates real-world forecasting where future data is unavailable during training. The comparison across static and rolling variants allows us to evaluate model generalizability and robustness over time.
 
 \subsection{Model Comparison}
+
 % Compare forecasting performance of different time series models on a selected country.
 % ------------------------------ Figure 6 Analysis ------------------------------
-\subsubsection*{Country-Level Model Feasibility Analysis (Figure 6)}
-
-
+\subsubsection*{Country-Level Model Performances Analysis}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figure4.png}
+    \includegraphics[width=\textwidth]{featurewise_model_comparison.png}
     \caption{Comparison of model performance across indicators using four metrics: RMSE/STD, $R^2$, MASE, and Directional Accuracy (DA). }
     \label{fig:indicator_comparison}
 \end{figure}
 
-Figure~\ref{fig:indicator_comparison} visualizes the prediction performance of three time series models—XGBoost, Random Forest, and ARIMA—across ten selected macroeconomic indicators. Each subfigure corresponds to one of the four evaluation metrics, with threshold lines indicating feasibility standards.
-
-Across most indicators, all three models achieve standardized errors (RMSE/STD) well below the cutoff of 1. The exception is GDP growth rate, where all models exhibit RMSE/STD above the threshold, confirming its inherent volatility and poor predictability again.
-
-In terms of explanatory power ($R^2$), all three 
-models perform strongly on indicators like life expectancy and GDP, often exceeding $R^2 = 0.9$. 
-However, for GDP growth, the $R^2$ values drop dramatically, reaching negative values for all three models, reflecting their inability to explain variance in this highly unstable target. This result aligns with long-standing findings in the forecasting literature that GDP growth is notoriously difficult to predict due to its susceptibility to external shocks, technological shifts, and policy discontinuities \cite{Loungani2001, ClementsHendry2002}.
-
-For MASE, ARIMA outperforms both XGBoost and RF on average, particularly for stable indicators like urban population share and life expectancy. However, it should be noted that MASE values for all models tend to exceed the benchmark threshold of 1 on volatile indicators such as GDP growth and trade-related variables. This suggests that while ARIMA benefits from its statistical simplicity, its absolute accuracy remains limited when faced with non-stationary or rapidly shifting macroeconomic environments \cite{Hyndman2006}.
-
-In terms of Directional Accuracy (DA), indicators such as the assets of private sector banks to GDP and overall GDP exhibit strong predictive signals, with all three models achieving DA values above 0.7. Notably, life expectancy and urban population rate emerge as the most directionally stable indicators, with ARIMA approaching near-perfect DA on urbanization—a phenomenon likely driven by the smooth, monotonic trajectories of demographic transitions \cite{Bloom2008, Montgomery2003}. These findings indicate that structural indicators with persistent trends are well suited to directional prediction, even by relatively simple models.
-
-Overall, the heatmap illustrates that while machine learning and statistical models can robustly capture long-term structural patterns, their performance deteriorates on high-volatility targets like GDP growth. This reinforces the need for volatility-aware modeling strategies and careful consideration of economic context when selecting forecast targets.
-
-% ------------------------------ Figure 7 Analysis ------------------------------
-\subsubsection*{Indicator-Specific Feasibility by Country (Figure 7)}
-
-
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{figure8.png}
-    \caption{Heatmap of Per-Indicator Feasibility Scores by Country. For each (country, indicator) pair, we select the best-performing model and report the corresponding feasibility score (0–4). Darker colors indicate more reliable prediction.}
+    \includegraphics[width=\textwidth]{guiding_score_combined.png}
+    \caption{Left figure shows comparison of model performance across indicators using guiding metric. Right figure shows the distribution of guiding scores for each model.}
+    \label{fig:indicator_comparison_2}
+\end{figure}
+We identify three key findings:
+
+First, the Naive Forecast ranks first in Directional Accuracy (DA) for nearly all features, which directly elevates its overall guiding score. This can be attributed to the fact that most national economic indicators—except GDP growth—tend to evolve steadily over short time horizons. In other words, $F_i^{(j)}$ for a feature $i$ in year $j$ is approximately a linear function of $j$, resulting in similar signs between the predicted change $\Delta F_i = F_i^{(j)} - F_i^{(j-1)}$ and the actual change $\Delta F_i' = F_i^{(j+1)} - F_i^{(j)}$. Because our guiding metric assigns the highest weight ($\beta$=5) to DA, the Naive method, despite its simplicity, achieves the top overall score. This inertia-driven advantage is also supported by economic theory. According to structural transformation theory \cite{Kuznets1971}, indicators such as urbanization, agricultural share, and energy use follow stable, long-term trajectories during development, making them easier to predict directionally using simple heuristics.
+
+Second, across the other three metrics—RMSE/STD, $R^2$, and MASE—all four models (Naive, ARIMA, Rolling XGB lag2, and lag3) exhibit comparable performance. As shown in Figure~\ref{fig:indicator_comparison_2} (left), their average scores in these dimensions differ only marginally. Furthermore, Figure~\ref{fig:indicator_comparison} supports this result: most features surpass the threshold for RMSE/STD and $R^2$, indicating strong performance across the board, but fall short in MASE when predicting volatile indicators such as GDP growth. This aligns with prior literature underscoring the unpredictability of economic growth due to policy shifts, external shocks, and cyclical disturbances \cite{Loungani2001}.
+
+Finally, the boxplot in Figure~\ref{fig:indicator_comparison_2} (right) reveals substantial differences in distribution. Although the Naive Forecast has the highest median score and a compact interquartile range, it also produces more low-score outliers. ARIMA yields the highest maximum scores and performs exceptionally well on trend-dominated features like urbanization, benefiting from its built-in trend and seasonality components. However, it also exhibits the widest variance, indicating less robustness. Rolling XGB models show tighter distributions and fewer outliers, suggesting better generalization in high-dimensional, nonlinear contexts. Their advantage lies in modeling complex interactions among indicators—an area where tree-based ML models excel \cite{Athey2019ML, Mullainathan2017ML}.
+
+These findings highlight the critical role of DA in short-term forecasting and suggest that simple methods can remain competitive when variables evolve monotonically. Conversely, complex models offer better scalability for non-stationary or feature-rich environments. Future improvements may include volatility-aware or Bayesian structural break models \cite{stock2002structural, Koop2013Bayesian} to better capture unpredictable features like GDP growth.
+
+
+% ------------------------------ Figure 7 Analysis ------------------------------
+\subsubsection*{Indicator-Specific Feasibility by Country}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{heat_map.png}
+    \caption{Heatmap of Per-Indicator Feasibility Scores by Country. For each (country, indicator) pair, we select the best-performing model and report the corresponding guiding score. Darker colors indicate more reliable prediction.}
     \label{fig:heatmap_feasibility}
 \end{figure}
 
 
-Figure~\ref{fig:heatmap_feasibility} visualizes the feasibility of predicting macroeconomic indicators across countries using their respective best-performing models. Each cell represents the maximum feasibility score (out of 4)\footnote{For a certain (Country, Model, Indicator), feasbility rate is the sum of $\alpha_i$'s. We have chosen the best model for each (Country, Indicator)} attained by any model for a given (country, indicator) pair. The darker the cell, the higher the reliability of the forecasted value according to our composite metric that combines RMSE/STD, $R^2$, MASE, and Directional Accuracy (DA).
+Figure~\ref{fig:heatmap_feasibility} provides a granular view of how forecastability varies both across indicators and across economies.
 
-Several key insights emerge:
+Three patterns stand out. 
 
-First, countries such as China, Korea, and India consistently exhibit high feasibility scores across nearly all indicators. Their rows are dominated by the darkest shades, indicating that for these countries, most structural indicators can be predicted with high reliability. This may reflect the availability of cleaner, more complete data, along with stable structural development patterns in these emerging economies \cite{Chen2011development, OECD2019india}.
+\textbf{(i) Structural indicators are universally easy to predict.} Life expectancy and urban‑population share (first two columns) display uniformly dark shades across nearly every country, reflecting their smooth, monotonic trajectories and the ability of even simple models to capture them. This observation is consistent with the “conditional convergence” hypothesis for demographic and infrastructure variables \cite{Barro1992Convergence}.
 
-In contrast, countries such as Argentina, Denmark, and Italy show a wider variance in feasibility across indicators, with many scores clustered around 1–2. This suggests higher volatility or data inconsistency, which impairs model effectiveness even when choosing the best available model.
+\textbf{(ii) Macro‑financial variables exhibit strong cross‑country heterogeneity.} Columns for private‑sector assets, exports, and imports appear markedly lighter for commodity‑oriented economies such as RUS \cite{Prebisch1950, SachsWarner2001} and IDN \cite{VanDerPloegPoelhekke2009} —an outcome that mirrors the high terms‑of‑trade volatility typical of resource‑dependent growth \cite{Prebisch1950}. 
+In contrast, advanced economies with diversified trade baskets—such as Germany (DEU), Japan (JPN), and the United States (USA)—achieve guiding scores above 5.5, consistent with IMF Article IV evidence that their external sectors are broadly diversified and less sensitive to commodity-price swings \cite{IMF2023Germany, IMF2023Japan, IMF2023USA}.
+However, note that countries with the highest guiding scores generally submit more complete data series to the World Bank; the reduced need for interpolation in turn lowers measurement error and boosts forecast reliability.
 
-Second, certain indicators are predictably easier across the board. Urban population\%, life expectancy, and GDP display high scores for almost all countries. These features represent slow-moving structural trends that evolve gradually over time, enabling models to capture their trajectories effectively regardless of the country context.
+\textbf{(iii) GDP growth remains the Achilles’ heel of economic forecasting.} The penultimate column is the lightest for almost every country, reaffirming our earlier conclusion that growth is intrinsically noisy and difficult to pin down. Even for historically steady performers such as CHN or IND, the best guiding score rarely exceeds 4.2. This pattern echoes the well‑documented “growth‑forecast puzzle” discussed by \cite{Loungani2001}.
 
-In contrast, GDP growth\% and trade-related indicators are challenging to predict for most countries, with many feasibility scores below 2. This aligns with findings in forecasting literature that highlight the unpredictability of growth due to sensitivity to shocks, policy regime changes, and latent external factors \cite{Loungani2001, ClementsHendry2002}.
+Taken together, Figure~\ref{fig:heatmap_feasibility} suggests 
+that cross‑country heterogeneity in forecastability is driven
+ less by modelling technique and more by structural economic 
+ characteristics—specifically, the degree of exposure to external 
+ shocks and the maturity of demographic transitions. Policymakers 
+ can thus place greater confidence in forecasts for slow‑moving 
+ structural variables, while treating projections for volatile 
+ indicators with appropriate caution.
 
-Finally, the heatmap also demonstrates the value of a model-selection strategy. By selecting the best-performing model per cell rather than applying a single model globally, we are able to surface reliable predictions even in challenging data regions. This justifies the use of hybrid or adaptive pipelines in global macroeconomic forecasting tasks.
-
-These results highlight that the feasibility of economic forecasting is a function not only of algorithmic design, but also of indicator volatility, national structural consistency, and the flexibility of the modeling pipeline.
-\subsection{Case Study: China}
-
-To ground our analysis in a concrete national context, we present a case study on China—an economy that demonstrates consistently high feasibility scores across indicators. Figure~\ref{fig:china_ts_metrics} summarizes the rolling forecast performance of three models (XGBoost, Random Forest, and ARIMA) across four evaluation metrics for ten selected indicators.
-
+\subsection{Case Study: G7 and EU}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{china_case_comparison.png}
-    \caption{Model performance for China across ten indicators and four evaluation metrics.}
-    \label{fig:china_ts_metrics}
+    \includegraphics[width=\textwidth]{comparison_feature_G7&EU.png}
+\caption{Guiding Score comparison across key indicators for selected G7 and EU countries. Each polyline represents a country, with higher scores indicating more reliable prediction. Solid lines correspond to the full period (1960–2020), while faded lines represent the recent decade (2010–2020).}    
+\label{fig:CaseStudyG7EU}
 \end{figure}
 
-Across all metrics, China's performance aligns with our broader findings. Indicators such as life expectancy, urban population\%, and energy use show excellent predictability, with RMSE/STD values below 0.2, $R^2$ scores near or above 0.9, and Directional Accuracy (DA) values nearing 1. ARIMA exhibits particularly strong DA and MASE performance on stable, trend-dominated indicators, consistent with its statistical strengths.
+Figure~\ref{fig:CaseStudyG7EU} reinforces earlier findings: life expectancy and 
+urban population share remain the most predictable indicators, 
+with scores exceeding 5.5 and 6.0 across all countries and time periods. 
+In contrast, GDP growth consistently exhibits the lowest scores, 
+rarely surpassing 4.5, confirming its volatility~\cite{Loungani2001}. 
+Most G7 economies show minimal performance drop between the two time periods, 
+indicating data stability and model robustness over time. 
 
-However, GDP growth once again resists accurate modeling: all three models produce negative $R^2$ and high MASE, confirming its structural volatility. Interestingly, XGBoost performs slightly better than ARIMA and RF on most indicators in RMSE and $R^2$, although ARIMA sometimes surpasses machine learning models in DA and MASE on low-variance series.
-
-This case study confirms China's suitability for time-series forecasting using machine learning, due to its consistent long-run development patterns and high-quality data.\cite{zhang2020china, xie2018macroeconomic} It also reinforces our earlier conclusion that indicator characteristics—such as structural stability—matter more than country size or development stage in determining forecast feasibility.
-\subsection{Case Study: United States}
-
-To provide a comparative benchmark to China, we analyze forecasting performance in the United States (US)—a developed economy with high data availability but greater macroeconomic volatility. Figure~\ref{fig:us_ts_metrics} summarizes results for the same set of indicators and models.
-
-\begin{figure}[H]
+\subsection{Case Study: BRICS-5}
+\begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{us_case_comparison.png}
-    \caption{Model performance for the United States across ten indicators and four evaluation metrics.}
-    \label{fig:us_ts_metrics}
+    \includegraphics[width=\textwidth]{comparison_feature_BRICS.png}
+\caption{Guiding Score comparison across key indicators for BRICS-5 countries (Brazil, Russia, India, China, South Africa). }    
+\label{fig:CaseStudyBRICS5}
 \end{figure}
+From Figure~\ref{fig:CaseStudyBRICS5}, structural indicators again 
+ stand out: urbanization and life expectancy exceed the guiding threshold 
+ of 5.5 and 6.0 across all five countries. However, BRICS economies display greater 
+ cross-feature and cross-period variation, especially for financial 
+ indicators like private sector assets and exports, reflecting their more 
+ dynamic and transitional economic structures~\cite{Lin2012newstructural}. 
+ India and South Africa exhibit sharper declines in the recent decade (2010–2020), 
+ likely due to external shocks and data limitations. 
+ The persistently low scores for GDP growth echo global 
+ patterns and further underscore the limits of model-based forecasting 
+ for cyclical variables~\cite{ClementsHendry2002}.
 
-The US results reveal several notable contrasts. While indicators such as urban population share and energy use remain highly predictable (RMSE/STD $<$ 0.2, $R^2 > 0.9$), other indicators—such as private sector assets and import/export ratios—show more erratic performance. This is particularly evident in MASE and DA, where RF performs poorly and exhibits higher variability.
 
-GDP growth remains the least predictable, with negative $R^2$ and MASE above 1 across all models, echoing global trends. However, ARIMA outperforms XGBoost and RF on several indicators, especially in DA and MASE for urbanization and energy use, likely due to the smoother underlying dynamics and higher data quality.
-
-Interestingly, while XGBoost retains a slight edge in RMSE and $R^2$ for several features, its gains over ARIMA are marginal in stable indicators and its performance deteriorates in the presence of high-frequency noise. This suggests that, in the US context, statistical models remain competitive for long-term indicators, but ensemble ML models show more robustness to mid-range structural variation.
-
-\subsubsection*{Comparison: China vs. United States}
-
-The China-US comparison highlights that strong performance depends not only on model choice but also on data structure and volatility. China's indicators tend to follow smoother trajectories—perhaps due to stronger long-term policy continuity and structural reforms—making them more amenable to both ML and statistical forecasting. In contrast, the US exhibits more structural breaks and market-driven fluctuations, reducing feasibility rates for some indicators.\cite{stock2002structural, koop2013us}
-
-Despite these differences, both countries achieve strong predictability on structural features like life expectancy, urbanization, and energy use. These shared patterns suggest that for these indicators, cross-national model generalization may be viable. Conversely, volatility-sensitive indicators such as GDP growth, trade shares, and financial ratios remain country-specific in their forecasting challenges.
-
-Overall, this comparative case study reinforces the earlier conclusion that temporal predictability is not solely a function of economic development level, but of indicator-specific dynamics and national structural stability.\cite{lin2012newstructural, reifschneider2015usforecasting}
-\subsection{Discussion}
-
-The country-level time series analysis presented in Sections 5.1–5.5 reveals several critical insights into the nature of temporal predictability in macroeconomic indicators.
-
-First, certain indicators—such as life expectancy, urbanization, and energy use—consistently demonstrate strong forecast performance across all countries and models. Their trajectories are largely monotonic and driven by structural factors such as demographic transition, urban planning, and industrialization. As such, they lend themselves well to both statistical models like ARIMA and machine learning models such as XGBoost and Random Forest. This supports previous findings that long-run demographic and energy trends are highly forecastable due to their persistence and data quality \cite{Bloom2008, xie2018macroeconomic}.
-
-Second, GDP growth and trade-related variables remain inherently difficult to forecast, showing high MASE and low or negative $R^2$ across countries. This reinforces the broader literature that stresses the unpredictability of short-run economic performance due to the influence of external shocks, geopolitical disruptions, and endogenous cycles \cite{Loungani2001, stock2002structural}. Even sophisticated models cannot reliably capture the turning points or volatility associated with these indicators, especially when relying solely on autoregressive features.
-
-Third, cross-country differences play a notable role. Emerging economies like China and India tend to exhibit smoother transitions in structural indicators, likely due to long-term policy planning and investment-driven growth patterns \cite{zhang2020china, OECD2019india}. In contrast, advanced economies such as the United States experience more frequent structural breaks and cyclical volatility, resulting in uneven model performance across indicators.
-
-Fourth, the feasibility heatmap reveals the importance of adaptive model selection. By dynamically choosing the best-performing model for each country-indicator pair, we achieve significantly higher reliability than any single-model approach. This result underscores the heterogeneity of temporal dynamics across countries and indicators and supports the development of hybrid forecasting pipelines.
-
-Lastly, the consistent performance of ARIMA on directionally stable indicators suggests that simple statistical baselines should not be overlooked. While machine learning models dominate in terms of scale-sensitive metrics (RMSE, $R^2$), ARIMA often outperforms them in directional accuracy and robustness, particularly in low-variance contexts.
-
-These findings reinforce the value of a mixed-methods approach and highlight the complementarity between machine learning and traditional statistical techniques in macroeconomic forecasting.
-
-\subsection{Hyperparameter Tuning for XGBoost, Random Forest}
+\subsection{Hyperparameter Tuning}
 
 % --- Begin Chapter 6 ---
 \section{Chapter 6: Cross-Country Temporal Forecasting}

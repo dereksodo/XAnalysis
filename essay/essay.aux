@@ -33,7 +33,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Prediction performance of XGBoost for each feature (1960--2020), including RMSE/STD, $R^2$, MASE, and Directional Accuracy.\relax }}{8}}
 \newlabel{fig:xgb_feature_summary}{{3}{8}}
 \citation{Loungani2001,ClementsHendry2002}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning for XGBoost and Random Forest}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning}{9}}
 \newlabel{fig:xgb_tuning_1960_2020}{{4a}{10}}
 \newlabel{sub@fig:xgb_tuning_1960_2020}{{a}{10}}
 \newlabel{fig:rf_tuning_1960_2020}{{4b}{10}}
@@ -47,38 +47,41 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5}Country-Level Time Series Forecasting}{11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Dataset and Feature Construction}{11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Models and Design Logic}{12}}
-\citation{Loungani2001,ClementsHendry2002}
+\citation{Kuznets1971}
+\citation{Loungani2001}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Model Comparison}{13}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of model performance across indicators using four metrics: RMSE/STD, $R^2$, MASE, and Directional Accuracy (DA). \relax }}{13}}
 \newlabel{fig:indicator_comparison}{{5}{13}}
-\citation{Hyndman2006}
-\citation{Bloom2008,Montgomery2003}
-\citation{Chen2011development,OECD2019india}
-\citation{Loungani2001,ClementsHendry2002}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Heatmap of Per-Indicator Feasibility Scores by Country. For each (country, indicator) pair, we select the best-performing model and report the corresponding feasibility score (0\IeC {\textendash }4). Darker colors indicate more reliable prediction.\relax }}{15}}
-\newlabel{fig:heatmap_feasibility}{{6}{15}}
-\citation{zhang2020china,xie2018macroeconomic}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Case Study: China}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Model performance for China across ten indicators and four evaluation metrics.\relax }}{16}}
-\newlabel{fig:china_ts_metrics}{{7}{16}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Case Study: United States}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Model performance for the United States across ten indicators and four evaluation metrics.\relax }}{17}}
-\newlabel{fig:us_ts_metrics}{{8}{17}}
-\citation{stock2002structural,koop2013us}
-\citation{lin2012newstructural,reifschneider2015usforecasting}
-\citation{Bloom2008,xie2018macroeconomic}
-\citation{Loungani2001,stock2002structural}
-\citation{zhang2020china,OECD2019india}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Discussion}{18}}
+\citation{Athey2019ML,Mullainathan2017ML}
+\citation{stock2002structural,Koop2013Bayesian}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left figure shows comparison of model performance across indicators using guiding metric. Right figure shows the distribution of guiding scores for each model.\relax }}{14}}
+\newlabel{fig:indicator_comparison_2}{{6}{14}}
+\citation{Barro1992Convergence}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Heatmap of Per-Indicator Feasibility Scores by Country. For each (country, indicator) pair, we select the best-performing model and report the corresponding guiding score. Darker colors indicate more reliable prediction.\relax }}{15}}
+\newlabel{fig:heatmap_feasibility}{{7}{15}}
+\citation{Prebisch1950,SachsWarner2001}
+\citation{VanDerPloegPoelhekke2009}
+\citation{Prebisch1950}
+\citation{IMF2023Germany,IMF2023Japan,IMF2023USA}
+\citation{Loungani2001}
+\citation{Loungani2001}
+\citation{Lin2012newstructural}
+\citation{ClementsHendry2002}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Case Study: G7 and EU}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Guiding Score comparison across key indicators for selected G7 and EU countries. Each polyline represents a country, with higher scores indicating more reliable prediction. Solid lines correspond to the full period (1960\IeC {\textendash }2020), while faded lines represent the recent decade (2010\IeC {\textendash }2020).\relax }}{17}}
+\newlabel{fig:CaseStudyG7EU}{{8}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Case Study: BRICS-5}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Guiding Score comparison across key indicators for BRICS-5 countries (Brazil, Russia, India, China, South Africa). \relax }}{18}}
+\newlabel{fig:CaseStudyBRICS5}{{9}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Hyperparameter Tuning}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Chapter 6: Cross-Country Temporal Forecasting}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Modeling Setup}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Cross-National Forecasting}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Trend and Volatility Analysis}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Discussion}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{18}}
 \bibstyle{unsrt}
 \bibdata{references}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Hyperparameter Tuning for XGBoost, Random Forest}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Chapter 6: Cross-Country Temporal Forecasting}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Modeling Setup}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Cross-National Forecasting}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Trend and Volatility Analysis}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Discussion}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{19}}
 \bibcite{GouletCoulombe2019}{1}
 \bibcite{Hall2018}{2}
 \bibcite{Yang2024}{3}
@@ -93,13 +96,13 @@
 \bibcite{Athey2019ML}{12}
 \bibcite{Baldwin2016Great}{13}
 \bibcite{Jerven2013Poor}{14}
-\bibcite{Bloom2008}{15}
-\bibcite{Montgomery2003}{16}
-\bibcite{Chen2011development}{17}
-\bibcite{OECD2019india}{18}
-\bibcite{zhang2020china}{19}
-\bibcite{xie2018macroeconomic}{20}
-\bibcite{stock2002structural}{21}
-\bibcite{koop2013us}{22}
-\bibcite{lin2012newstructural}{23}
-\bibcite{reifschneider2015usforecasting}{24}
+\bibcite{stock2002structural}{15}
+\bibcite{Koop2013Bayesian}{16}
+\bibcite{Barro1992Convergence}{17}
+\bibcite{Prebisch1950}{18}
+\bibcite{SachsWarner2001}{19}
+\bibcite{VanDerPloegPoelhekke2009}{20}
+\bibcite{IMF2023Germany}{21}
+\bibcite{IMF2023Japan}{22}
+\bibcite{IMF2023USA}{23}
+\bibcite{Lin2012newstructural}{24}

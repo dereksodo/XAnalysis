@@ -12,19 +12,18 @@
 \contentsline {section}{\numberline {4}Cross-Indicator Forecasting}{7}
 \contentsline {subsection}{\numberline {4.1}Prediction Task}{7}
 \contentsline {subsection}{\numberline {4.2}Prediction Results}{7}
-\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning for XGBoost and Random Forest}{9}
+\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning}{9}
 \contentsline {subsection}{\numberline {4.4}Summary}{11}
 \contentsline {section}{\numberline {5}Country-Level Time Series Forecasting}{11}
 \contentsline {subsection}{\numberline {5.1}Dataset and Feature Construction}{11}
 \contentsline {subsection}{\numberline {5.2}Models and Design Logic}{12}
 \contentsline {subsection}{\numberline {5.3}Model Comparison}{13}
-\contentsline {subsection}{\numberline {5.4}Case Study: China}{16}
-\contentsline {subsection}{\numberline {5.5}Case Study: United States}{17}
-\contentsline {subsection}{\numberline {5.6}Discussion}{18}
-\contentsline {subsection}{\numberline {5.7}Hyperparameter Tuning for XGBoost, Random Forest}{19}
-\contentsline {section}{\numberline {6}Chapter 6: Cross-Country Temporal Forecasting}{19}
-\contentsline {subsection}{\numberline {6.1}Modeling Setup}{19}
-\contentsline {subsection}{\numberline {6.2}Cross-National Forecasting}{19}
-\contentsline {subsection}{\numberline {6.3}Trend and Volatility Analysis}{19}
-\contentsline {subsection}{\numberline {6.4}Discussion}{19}
-\contentsline {section}{\numberline {7}Conclusion}{19}
+\contentsline {subsection}{\numberline {5.4}Case Study: G7 and EU}{17}
+\contentsline {subsection}{\numberline {5.5}Case Study: BRICS-5}{17}
+\contentsline {subsection}{\numberline {5.6}Hyperparameter Tuning}{18}
+\contentsline {section}{\numberline {6}Chapter 6: Cross-Country Temporal Forecasting}{18}
+\contentsline {subsection}{\numberline {6.1}Modeling Setup}{18}
+\contentsline {subsection}{\numberline {6.2}Cross-National Forecasting}{18}
+\contentsline {subsection}{\numberline {6.3}Trend and Volatility Analysis}{18}
+\contentsline {subsection}{\numberline {6.4}Discussion}{18}
+\contentsline {section}{\numberline {7}Conclusion}{18}

@@ -1,0 +1,1801 @@
+
+== Tuning XGB ==
+[1/200] ARG – SP.DYN.LE00.IN
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+   → best_guiding_cv = 2.576 | final_guiding = 2.576
+[2/200] ARG – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.311 | final_guiding = 2.311
+[3/200] ARG – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.241 | final_guiding = 4.241
+[4/200] ARG – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.645 | final_guiding = 2.645
+[5/200] ARG – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.793 | final_guiding = 2.793
+[6/200] ARG – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.441 | final_guiding = 3.441
+[7/200] ARG – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.147 | final_guiding = 3.147
+[8/200] ARG – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.482 | final_guiding = 2.482
+[9/200] ARG – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.146 | final_guiding = 3.146
+[10/200] ARG – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.211 | final_guiding = 3.211
+[11/200] AUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.954 | final_guiding = 1.954
+[12/200] AUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.561 | final_guiding = 2.561
+[13/200] AUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.313 | final_guiding = 3.313
+[14/200] AUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.954 | final_guiding = 2.954
+[15/200] AUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.291 | final_guiding = 2.291
+[16/200] AUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.471 | final_guiding = 3.471
+[17/200] AUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.142 | final_guiding = 2.142
+[18/200] AUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.669 | final_guiding = 3.669
+[19/200] AUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.484 | final_guiding = 3.484
+[20/200] AUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.267 | final_guiding = 4.267
+[21/200] BRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.132 | final_guiding = 2.132
+[22/200] BRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.366 | final_guiding = 2.366
+[23/200] BRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.610 | final_guiding = 2.610
+[24/200] BRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.037 | final_guiding = 2.037
+[25/200] BRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.200 | final_guiding = 2.200
+[26/200] BRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.124 | final_guiding = 3.124
+[27/200] BRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.846 | final_guiding = 2.846
+[28/200] BRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.141 | final_guiding = 4.141
+[29/200] BRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.255 | final_guiding = 3.255
+[30/200] BRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.455 | final_guiding = 2.455
+[31/200] CAN – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.858 | final_guiding = 1.858
+[32/200] CAN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.039 | final_guiding = 2.039
+[33/200] CAN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.598 | final_guiding = 3.598
+[34/200] CAN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.172 | final_guiding = 2.172
+[35/200] CAN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = -1000000000.000 | final_guiding = nan
+[36/200] CAN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.028 | final_guiding = 4.028
+[37/200] CAN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.497 | final_guiding = 2.497
+[38/200] CAN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.639 | final_guiding = 2.639
+[39/200] CAN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.865 | final_guiding = 2.865
+[40/200] CAN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.264 | final_guiding = 2.264
+[41/200] CHN – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.456 | final_guiding = 2.456
+[42/200] CHN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.474 | final_guiding = 2.474
+[43/200] CHN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.400 | final_guiding = 2.400
+[44/200] CHN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.144 | final_guiding = 2.144
+[45/200] CHN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.419 | final_guiding = 2.419
+[46/200] CHN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.818 | final_guiding = 2.818
+[47/200] CHN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.192 | final_guiding = 2.192
+[48/200] CHN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.213 | final_guiding = 2.213
+[49/200] CHN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.844 | final_guiding = 2.844
+[50/200] CHN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.024 | final_guiding = 2.024
+[51/200] DEU – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.371 | final_guiding = 2.371
+[52/200] DEU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.140 | final_guiding = 2.140
+[53/200] DEU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.873 | final_guiding = 3.873
+[54/200] DEU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.464 | final_guiding = 2.464
+[55/200] DEU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.979 | final_guiding = 1.979
+[56/200] DEU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.090 | final_guiding = 3.090
+[57/200] DEU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.056 | final_guiding = 3.056
+[58/200] DEU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.597 | final_guiding = 3.597
+[59/200] DEU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.423 | final_guiding = 3.423
+[60/200] DEU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.776 | final_guiding = 2.776
+[61/200] EUU – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.961 | final_guiding = 1.961
+[62/200] EUU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.192 | final_guiding = 2.192
+[63/200] EUU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 1.796 | final_guiding = 1.796
+[64/200] EUU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.469 | final_guiding = 2.469
+[65/200] EUU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.339 | final_guiding = 3.339
+[66/200] EUU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.242 | final_guiding = 3.242
+[67/200] EUU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.755 | final_guiding = 3.755
+[68/200] EUU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.651 | final_guiding = 3.651
+[69/200] EUU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.734 | final_guiding = 3.734
+[70/200] EUU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.223 | final_guiding = 2.223
+[71/200] FRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.311 | final_guiding = 2.311
+[72/200] FRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.088 | final_guiding = 2.088
+[73/200] FRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.424 | final_guiding = 3.424
+[74/200] FRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.200 | final_guiding = 2.200
+[75/200] FRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.342 | final_guiding = 2.342
+[76/200] FRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.163 | final_guiding = 3.163
+[77/200] FRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.056 | final_guiding = 3.056
+[78/200] FRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.595 | final_guiding = 3.595
+[79/200] FRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.440 | final_guiding = 3.440
+[80/200] FRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.003 | final_guiding = 2.003
+[81/200] GBR – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.796 | final_guiding = 1.796
+[82/200] GBR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.191 | final_guiding = 2.191
+[83/200] GBR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.211 | final_guiding = 3.211
+[84/200] GBR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.235 | final_guiding = 2.235
+[85/200] GBR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.860 | final_guiding = 2.860
+[86/200] GBR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.366 | final_guiding = 2.366
+[87/200] GBR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.764 | final_guiding = 2.764
+[88/200] GBR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.818 | final_guiding = 2.818
+[89/200] GBR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.966 | final_guiding = 3.966
+[90/200] GBR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.528 | final_guiding = 2.528
+[91/200] IDN – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.401 | final_guiding = 2.401
+[92/200] IDN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.245 | final_guiding = 2.245
+[93/200] IDN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.152 | final_guiding = 4.152
+[94/200] IDN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.901 | final_guiding = 1.901
+[95/200] IDN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.107 | final_guiding = 2.107
+[96/200] IDN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.321 | final_guiding = 3.321
+[97/200] IDN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.300 | final_guiding = 2.300
+[98/200] IDN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.539 | final_guiding = 3.539
+[99/200] IDN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.153 | final_guiding = 3.153
+[100/200] IDN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.476 | final_guiding = 2.476
+[101/200] IND – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.383 | final_guiding = 2.383
+[102/200] IND – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.373 | final_guiding = 2.373
+[103/200] IND – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.379 | final_guiding = 4.379
+[104/200] IND – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.892 | final_guiding = 1.892
+[105/200] IND – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.530 | final_guiding = 2.530
+[106/200] IND – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.369 | final_guiding = 3.369
+[107/200] IND – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.701 | final_guiding = 2.701
+[108/200] IND – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.904 | final_guiding = 3.904
+[109/200] IND – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.129 | final_guiding = 3.129
+[110/200] IND – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.870 | final_guiding = 1.870
+[111/200] ITA – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.508 | final_guiding = 2.508
+[112/200] ITA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.612 | final_guiding = 2.612
+[113/200] ITA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.220 | final_guiding = 3.220
+[114/200] ITA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.684 | final_guiding = 2.684
+[115/200] ITA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.220 | final_guiding = 2.220
+[116/200] ITA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.218 | final_guiding = 4.218
+[117/200] ITA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.488 | final_guiding = 4.488
+[118/200] ITA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.415 | final_guiding = 3.415
+[119/200] ITA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.856 | final_guiding = 3.856
+[120/200] ITA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.620 | final_guiding = 2.620
+[121/200] JPN – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.687 | final_guiding = 2.687
+[122/200] JPN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 1.748 | final_guiding = 1.748
+[123/200] JPN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.241 | final_guiding = 2.241
+[124/200] JPN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.669 | final_guiding = 2.669
+[125/200] JPN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.335 | final_guiding = 3.335
+[126/200] JPN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.335 | final_guiding = 4.335
+[127/200] JPN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.725 | final_guiding = 2.725
+[128/200] JPN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.118 | final_guiding = 4.118
+[129/200] JPN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.441 | final_guiding = 3.441
+[130/200] JPN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.072 | final_guiding = 4.072
+[131/200] KOR – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.959 | final_guiding = 1.959
+[132/200] KOR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 3.685 | final_guiding = 3.685
+[133/200] KOR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.235 | final_guiding = 2.235
+[134/200] KOR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.845 | final_guiding = 1.845
+[135/200] KOR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.277 | final_guiding = 2.277
+[136/200] KOR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.783 | final_guiding = 2.783
+[137/200] KOR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.792 | final_guiding = 2.792
+[138/200] KOR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.691 | final_guiding = 2.691
+[139/200] KOR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.105 | final_guiding = 2.105
+[140/200] KOR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.995 | final_guiding = 1.995
+[141/200] MEX – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.290 | final_guiding = 2.290
+[142/200] MEX – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.113 | final_guiding = 2.113
+[143/200] MEX – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.100 | final_guiding = 3.100
+[144/200] MEX – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.612 | final_guiding = 4.612
+[145/200] MEX – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.491 | final_guiding = 2.491
+[146/200] MEX – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.072 | final_guiding = 3.072
+[147/200] MEX – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.612 | final_guiding = 2.612
+[148/200] MEX – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.003 | final_guiding = 3.003
+[149/200] MEX – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.270 | final_guiding = 4.270
+[150/200] MEX – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.875 | final_guiding = 1.875
+[151/200] RUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.268 | final_guiding = 2.268
+[152/200] RUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.644 | final_guiding = 2.644
+[153/200] RUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.067 | final_guiding = 2.067
+[154/200] RUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.036 | final_guiding = 3.036
+[155/200] RUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.595 | final_guiding = 1.595
+[156/200] RUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.052 | final_guiding = 2.052
+[157/200] RUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.076 | final_guiding = 3.076
+[158/200] RUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.414 | final_guiding = 4.414
+[159/200] RUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.510 | final_guiding = 3.510
+[160/200] RUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.145 | final_guiding = 2.145
+[161/200] SAU – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.397 | final_guiding = 2.397
+[162/200] SAU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.636 | final_guiding = 2.636
+[163/200] SAU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.767 | final_guiding = 2.767
+[164/200] SAU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.589 | final_guiding = 1.589
+[165/200] SAU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.230 | final_guiding = 3.230
+[166/200] SAU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.354 | final_guiding = 3.354
+[167/200] SAU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.250 | final_guiding = 2.250
+[168/200] SAU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.220 | final_guiding = 3.220
+[169/200] SAU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.873 | final_guiding = 3.873
+[170/200] SAU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.180 | final_guiding = 2.180
+[171/200] TUR – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.569 | final_guiding = 2.569
+[172/200] TUR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.886 | final_guiding = 2.886
+[173/200] TUR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.556 | final_guiding = 3.556
+[174/200] TUR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.574 | final_guiding = 2.574
+[175/200] TUR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.837 | final_guiding = 1.837
+[176/200] TUR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.449 | final_guiding = 3.449
+[177/200] TUR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.462 | final_guiding = 2.462
+[178/200] TUR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.345 | final_guiding = 3.345
+[179/200] TUR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.294 | final_guiding = 4.294
+[180/200] TUR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.505 | final_guiding = 2.505
+[181/200] USA – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.270 | final_guiding = 2.270
+[182/200] USA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.594 | final_guiding = 2.594
+[183/200] USA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.397 | final_guiding = 3.397
+[184/200] USA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.097 | final_guiding = 2.097
+[185/200] USA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.191 | final_guiding = 3.191/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+
+[186/200] USA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.681 | final_guiding = 3.681
+[187/200] USA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.917 | final_guiding = 2.917
+[188/200] USA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.361 | final_guiding = 2.361
+[189/200] USA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.280 | final_guiding = 3.280
+[190/200] USA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.556 | final_guiding = 2.556
+[191/200] ZAF – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.067 | final_guiding = 2.067
+[192/200] ZAF – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.005 | final_guiding = 2.005
+[193/200] ZAF – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.038 | final_guiding = 2.038
+[194/200] ZAF – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.144 | final_guiding = 2.144
+[195/200] ZAF – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.077 | final_guiding = 3.077
+[196/200] ZAF – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.780 | final_guiding = 2.780
+[197/200] ZAF – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.822 | final_guiding = 2.822
+[198/200] ZAF – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.903 | final_guiding = 2.903
+[199/200] ZAF – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.145 | final_guiding = 3.145
+[200/200] ZAF – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.172 | final_guiding = 2.172
+Saved best‑summary to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5tuning/XGB_best_summary.csv
+Saved grid‑results to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5tuning/XGB_grid_results.csv
+
+== Tuning RF ==
+[1/200] ARG – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.050 | final_guiding = 2.050
+[2/200] ARG – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.453 | final_guiding = 2.453
+[3/200] ARG – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.372 | final_guiding = 4.372
+[4/200] ARG – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.064 | final_guiding = 2.064
+[5/200] ARG – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.141 | final_guiding = 3.141
+[6/200] ARG – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.031 | final_guiding = 4.031
+[7/200] ARG – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.877 | final_guiding = 2.877
+[8/200] ARG – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.705 | final_guiding = 2.705
+[9/200] ARG – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.685 | final_guiding = 3.685
+[10/200] ARG – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.783 | final_guiding = 1.783
+[11/200] AUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.929 | final_guiding = 1.929
+[12/200] AUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.183 | final_guiding = 2.183
+[13/200] AUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.266 | final_guiding = 2.266
+[14/200] AUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.456 | final_guiding = 3.456
+[15/200] AUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.058 | final_guiding = 2.058
+[16/200] AUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.953 | final_guiding = 3.953
+[17/200] AUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.292 | final_guiding = 2.292
+[18/200] AUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.794 | final_guiding = 3.794
+[19/200] AUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.536 | final_guiding = 3.536
+[20/200] AUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.291 | final_guiding = 4.291
+[21/200] BRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.773 | final_guiding = 1.773
+[22/200] BRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 1.891 | final_guiding = 1.891
+[23/200] BRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.444 | final_guiding = 2.444
+[24/200] BRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.867 | final_guiding = 1.867
+[25/200] BRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.112 | final_guiding = 2.112
+[26/200] BRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.386 | final_guiding = 3.386
+[27/200] BRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.564 | final_guiding = 2.564
+[28/200] BRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.358 | final_guiding = 3.358
+[29/200] BRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.330 | final_guiding = 3.330
+[30/200] BRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.500 | final_guiding = 2.500
+[31/200] CAN – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.043 | final_guiding = 2.043
+[32/200] CAN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.003 | final_guiding = 2.003
+[33/200] CAN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.935 | final_guiding = 3.935
+[34/200] CAN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.149 | final_guiding = 2.149
+[35/200] CAN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = -1000000000.000 | final_guiding = nan
+[36/200] CAN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.911 | final_guiding = 4.911
+[37/200] CAN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.137 | final_guiding = 2.137
+[38/200] CAN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.252 | final_guiding = 2.252
+[39/200] CAN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.974 | final_guiding = 2.974
+[40/200] CAN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.220 | final_guiding = 2.220
+[41/200] CHN – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.835 | final_guiding = 1.835
+[42/200] CHN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 1.842 | final_guiding = 1.842
+[43/200] CHN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.107 | final_guiding = 2.107
+[44/200] CHN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.665 | final_guiding = 1.665
+[45/200] CHN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.114 | final_guiding = 2.114
+[46/200] CHN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.894 | final_guiding = 2.894
+[47/200] CHN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 1.824 | final_guiding = 1.824
+[48/200] CHN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.034 | final_guiding = 3.034
+[49/200] CHN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.820 | final_guiding = 2.820
+[50/200] CHN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.940 | final_guiding = 1.940
+[51/200] DEU – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.900 | final_guiding = 1.900
+[52/200] DEU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.070 | final_guiding = 2.070
+[53/200] DEU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.467 | final_guiding = 3.467
+[54/200] DEU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.176 | final_guiding = 2.176
+[55/200] DEU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.327 | final_guiding = 2.327
+[56/200] DEU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.130 | final_guiding = 2.130
+[57/200] DEU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.094 | final_guiding = 2.094
+[58/200] DEU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.919 | final_guiding = 2.919
+[59/200] DEU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.890 | final_guiding = 3.890
+[60/200] DEU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.688 | final_guiding = 1.688
+[61/200] EUU – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.714 | final_guiding = 1.714
+[62/200] EUU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.397 | final_guiding = 2.397
+[63/200] EUU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 1.717 | final_guiding = 1.717
+[64/200] EUU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.296 | final_guiding = 2.296
+[65/200] EUU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.403 | final_guiding = 3.403
+[66/200] EUU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.132 | final_guiding = 3.132
+[67/200] EUU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.394 | final_guiding = 2.394
+[68/200] EUU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.516 | final_guiding = 2.516
+[69/200] EUU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.032 | final_guiding = 4.032
+[70/200] EUU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.665 | final_guiding = 1.665
+[71/200] FRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.917 | final_guiding = 1.917
+[72/200] FRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.303 | final_guiding = 2.303
+[73/200] FRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.664 | final_guiding = 2.664
+[74/200] FRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.970 | final_guiding = 1.970
+[75/200] FRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.405 | final_guiding = 2.405
+[76/200] FRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.655 | final_guiding = 2.655
+[77/200] FRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.613 | final_guiding = 2.613
+[78/200] FRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.154 | final_guiding = 3.154
+[79/200] FRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.700 | final_guiding = 3.700
+[80/200] FRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.972 | final_guiding = 1.972
+[81/200] GBR – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.238 | final_guiding = 2.238
+[82/200] GBR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.302 | final_guiding = 2.302
+[83/200] GBR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.613 | final_guiding = 3.613
+[84/200] GBR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.889 | final_guiding = 1.889
+[85/200] GBR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.410 | final_guiding = 3.410
+[86/200] GBR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.358 | final_guiding = 2.358
+[87/200] GBR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.270 | final_guiding = 3.270
+[88/200] GBR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.485 | final_guiding = 2.485
+[89/200] GBR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.725 | final_guiding = 3.725
+[90/200] GBR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.811 | final_guiding = 1.811
+[91/200] IDN – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.107 | final_guiding = 2.107
+[92/200] IDN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.201 | final_guiding = 2.201
+[93/200] IDN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.188 | final_guiding = 2.188
+[94/200] IDN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.564 | final_guiding = 1.564
+[95/200] IDN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.107 | final_guiding = 2.107
+[96/200] IDN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.846 | final_guiding = 3.846
+[97/200] IDN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.061 | final_guiding = 2.061
+[98/200] IDN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.884 | final_guiding = 2.884
+[99/200] IDN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.321 | final_guiding = 4.321
+[100/200] IDN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.168 | final_guiding = 4.168
+[101/200] IND – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.312 | final_guiding = 2.312
+[102/200] IND – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.455 | final_guiding = 2.455
+[103/200] IND – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.375 | final_guiding = 4.375
+[104/200] IND – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.744 | final_guiding = 1.744
+[105/200] IND – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.508 | final_guiding = 2.508
+[106/200] IND – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.044 | final_guiding = 4.044
+[107/200] IND – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.578 | final_guiding = 2.578
+[108/200] IND – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.157 | final_guiding = 4.157
+[109/200] IND – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.595 | final_guiding = 3.595
+[110/200] IND – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.869 | final_guiding = 1.869
+[111/200] ITA – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.738 | final_guiding = 1.738
+[112/200] ITA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.166 | final_guiding = 2.166
+[113/200] ITA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 1.885 | final_guiding = 1.885
+[114/200] ITA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.967 | final_guiding = 2.967
+[115/200] ITA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.765 | final_guiding = 2.765
+[116/200] ITA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.662 | final_guiding = 3.662
+[117/200] ITA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.352 | final_guiding = 2.352
+[118/200] ITA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.776 | final_guiding = 2.776
+[119/200] ITA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.057 | final_guiding = 4.057
+[120/200] ITA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.618 | final_guiding = 2.618
+[121/200] JPN – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.851 | final_guiding = 1.851
+[122/200] JPN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.146 | final_guiding = 2.146
+[123/200] JPN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.287 | final_guiding = 2.287
+[124/200] JPN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.436 | final_guiding = 2.436
+[125/200] JPN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.764 | final_guiding = 2.764
+[126/200] JPN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.568 | final_guiding = 3.568
+[127/200] JPN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.537 | final_guiding = 2.537
+[128/200] JPN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.555 | final_guiding = 3.555
+[129/200] JPN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.329 | final_guiding = 3.329
+[130/200] JPN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.402 | final_guiding = 4.402
+[131/200] KOR – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.925 | final_guiding = 1.925
+[132/200] KOR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.041 | final_guiding = 2.041
+[133/200] KOR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.363 | final_guiding = 2.363
+[134/200] KOR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.471 | final_guiding = 2.471
+[135/200] KOR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.077 | final_guiding = 2.077
+[136/200] KOR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.235 | final_guiding = 3.235
+[137/200] KOR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.608 | final_guiding = 2.608
+[138/200] KOR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.034 | final_guiding = 2.034
+[139/200] KOR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.945 | final_guiding = 2.945
+[140/200] KOR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.960 | final_guiding = 1.960
+[141/200] MEX – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.883 | final_guiding = 2.883
+[142/200] MEX – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.015 | final_guiding = 2.015
+[143/200] MEX – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.788 | final_guiding = 3.788
+[144/200] MEX – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.775 | final_guiding = 2.775
+[145/200] MEX – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.202 | final_guiding = 2.202
+[146/200] MEX – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.954 | final_guiding = 2.954
+[147/200] MEX – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.824 | final_guiding = 2.824
+[148/200] MEX – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.964 | final_guiding = 2.964
+[149/200] MEX – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.575 | final_guiding = 3.575
+[150/200] MEX – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.007 | final_guiding = 2.007
+[151/200] RUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.517 | final_guiding = 2.517
+[152/200] RUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.182 | final_guiding = 2.182
+[153/200] RUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.150 | final_guiding = 2.150
+[154/200] RUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.305 | final_guiding = 3.305
+[155/200] RUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.496 | final_guiding = 1.496
+[156/200] RUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 2.671 | final_guiding = 2.671
+[157/200] RUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.023 | final_guiding = 3.023
+[158/200] RUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.379 | final_guiding = 4.379
+[159/200] RUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.677 | final_guiding = 3.677
+[160/200] RUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.162 | final_guiding = 2.162
+[161/200] SAU – SP.DYN.LE00.IN
+   → best_guiding_cv = 1.890 | final_guiding = 1.890
+[162/200] SAU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.164 | final_guiding = 2.164
+[163/200] SAU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.766 | final_guiding = 2.766
+[164/200] SAU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 1.930 | final_guiding = 1.930
+[165/200] SAU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.726 | final_guiding = 2.726
+[166/200] SAU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.701 | final_guiding = 3.701
+[167/200] SAU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.723 | final_guiding = 2.723/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+
+[168/200] SAU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.349 | final_guiding = 3.349
+[169/200] SAU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.570 | final_guiding = 3.570
+[170/200] SAU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.227 | final_guiding = 2.227
+[171/200] TUR – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.150 | final_guiding = 2.150
+[172/200] TUR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.351 | final_guiding = 2.351
+[173/200] TUR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.093 | final_guiding = 3.093
+[174/200] TUR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.731 | final_guiding = 2.731
+[175/200] TUR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.837 | final_guiding = 1.837
+[176/200] TUR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.528 | final_guiding = 3.528
+[177/200] TUR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.336 | final_guiding = 2.336
+[178/200] TUR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.127 | final_guiding = 3.127
+[179/200] TUR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.427 | final_guiding = 4.427
+[180/200] TUR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.670 | final_guiding = 2.670
+[181/200] USA – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.004 | final_guiding = 2.004
+[182/200] USA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 2.312 | final_guiding = 2.312
+[183/200] USA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.760 | final_guiding = 3.760
+[184/200] USA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.213 | final_guiding = 2.213
+[185/200] USA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.708 | final_guiding = 3.708
+[186/200] USA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.509 | final_guiding = 3.509
+[187/200] USA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.844 | final_guiding = 2.844
+[188/200] USA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.601 | final_guiding = 2.601
+[189/200] USA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.609 | final_guiding = 3.609
+[190/200] USA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.421 | final_guiding = 2.421
+[191/200] ZAF – SP.DYN.LE00.IN
+   → best_guiding_cv = 2.365 | final_guiding = 2.365
+[192/200] ZAF – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 1.934 | final_guiding = 1.934
+[193/200] ZAF – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 2.609 | final_guiding = 2.609
+[194/200] ZAF – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.761 | final_guiding = 2.761
+[195/200] ZAF – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.908 | final_guiding = 3.908
+[196/200] ZAF – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.380 | final_guiding = 3.380
+[197/200] ZAF – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.504 | final_guiding = 2.504
+[198/200] ZAF – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.572 | final_guiding = 2.572
+[199/200] ZAF – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.251 | final_guiding = 3.251
+[200/200] ZAF – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 1.595 | final_guiding = 1.595
+Saved best‑summary to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5tuning/RF_best_summary.csv
+Saved grid‑results to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5tuning/RF_grid_results.csv
+
+== Tuning ARIMA ==
+[1/200] ARG – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.339 | final_guiding = 6.339
+[2/200] ARG – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.450 | final_guiding = 6.450
+[3/200] ARG – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.107 | final_guiding = 3.107
+[4/200] ARG – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.506 | final_guiding = 2.506
+[5/200] ARG – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.316 | final_guiding = 3.316
+[6/200] ARG – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.647 | final_guiding = 3.647
+[7/200] ARG – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.916 | final_guiding = 2.916
+[8/200] ARG – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 5.064 | final_guiding = 5.064
+[9/200] ARG – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.210 | final_guiding = 4.210
+[10/200] ARG – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.772 | final_guiding = 4.772
+[11/200] AUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.993 | final_guiding = 5.993
+[12/200] AUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.445 | final_guiding = 6.445
+[13/200] AUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.205 | final_guiding = 4.205
+[14/200] AUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.949 | final_guiding = 2.949
+[15/200] AUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.455 | final_guiding = 4.455
+[16/200] AUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.156 | final_guiding = 4.156
+[17/200] AUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.004 | final_guiding = 4.004
+[18/200] AUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.908 | final_guiding = 3.908
+[19/200] AUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.565 | final_guiding = 3.565
+[20/200] AUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.612 | final_guiding = 4.612
+[21/200] BRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.018 | final_guiding = 6.018
+[22/200] BRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.460 | final_guiding = 6.460
+[23/200] BRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.202 | final_guiding = 4.202
+[24/200] BRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.716 | final_guiding = 2.716
+[25/200] BRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.066 | final_guiding = 3.066
+[26/200] BRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.394 | final_guiding = 3.394
+[27/200] BRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.607 | final_guiding = 3.607
+[28/200] BRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.226 | final_guiding = 4.226
+[29/200] BRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.898 | final_guiding = 3.898
+[30/200] BRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.829 | final_guiding = 4.829
+[31/200] CAN – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.266 | final_guiding = 5.266
+[32/200] CAN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.057 | final_guiding = 6.057
+[33/200] CAN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.436 | final_guiding = 4.436
+[34/200] CAN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.458 | final_guiding = 2.458
+[35/200] CAN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = -1000000000.000 | final_guiding = nan
+[36/200] CAN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.462 | final_guiding = 4.462
+[37/200] CAN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.167 | final_guiding = 3.167
+[38/200] CAN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.806 | final_guiding = 3.806
+[39/200] CAN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.538 | final_guiding = 3.538
+[40/200] CAN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.578 | final_guiding = 3.578
+[41/200] CHN – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.089 | final_guiding = 6.089
+[42/200] CHN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.497 | final_guiding = 6.497
+[43/200] CHN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.446 | final_guiding = 3.446
+[44/200] CHN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.952 | final_guiding = 4.952
+[45/200] CHN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.306 | final_guiding = 3.306
+[46/200] CHN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.080 | final_guiding = 4.080
+[47/200] CHN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 6.379 | final_guiding = 6.379
+[48/200] CHN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.919 | final_guiding = 2.919
+[49/200] CHN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 5.306 | final_guiding = 5.306
+[50/200] CHN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.644 | final_guiding = 4.644
+[51/200] DEU – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.312 | final_guiding = 5.312
+[52/200] DEU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 5.793 | final_guiding = 5.793
+[53/200] DEU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.480 | final_guiding = 4.480
+[54/200] DEU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.154 | final_guiding = 4.154
+[55/200] DEU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.436 | final_guiding = 4.436
+[56/200] DEU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.524 | final_guiding = 3.524
+[57/200] DEU – NY.GDP.MKTP.CD/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+/Users/tianhaozhang/Desktop/XCountryOIRPrediction/src/DataProcessing/utils.py:59: RuntimeWarning: overflow encountered in exp
+  sigmoid = lambda x: 1 / (1 + np.exp(-x))
+
+   → best_guiding_cv = 4.228 | final_guiding = 4.228
+[58/200] DEU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.433 | final_guiding = 4.433
+[59/200] DEU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.352 | final_guiding = 4.352
+[60/200] DEU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.780 | final_guiding = 2.780
+[61/200] EUU – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.816 | final_guiding = 5.816
+[62/200] EUU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.396 | final_guiding = 6.396
+[63/200] EUU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.822 | final_guiding = 3.822
+[64/200] EUU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.370 | final_guiding = 3.370
+[65/200] EUU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.336 | final_guiding = 4.336
+[66/200] EUU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.799 | final_guiding = 4.799
+[67/200] EUU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.172 | final_guiding = 4.172
+[68/200] EUU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 5.171 | final_guiding = 5.171
+[69/200] EUU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.216 | final_guiding = 4.216
+[70/200] EUU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.520 | final_guiding = 2.520
+[71/200] FRA – SP.DYN.LE00.IN
+   → best_guiding_cv = 3.286 | final_guiding = 3.286
+[72/200] FRA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.125 | final_guiding = 6.125
+[73/200] FRA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.992 | final_guiding = 3.992
+[74/200] FRA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.969 | final_guiding = 2.969
+[75/200] FRA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.560 | final_guiding = 3.560
+[76/200] FRA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.286 | final_guiding = 3.286
+[77/200] FRA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.391 | final_guiding = 4.391
+[78/200] FRA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.786 | final_guiding = 4.786
+[79/200] FRA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.064 | final_guiding = 4.064
+[80/200] FRA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.377 | final_guiding = 2.377
+[81/200] GBR – SP.DYN.LE00.IN
+   → best_guiding_cv = 4.503 | final_guiding = 4.503
+[82/200] GBR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 5.704 | final_guiding = 5.704
+[83/200] GBR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.382 | final_guiding = 3.382
+[84/200] GBR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.047 | final_guiding = 3.047
+[85/200] GBR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.672 | final_guiding = 3.672
+[86/200] GBR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.023 | final_guiding = 3.023
+[87/200] GBR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 2.928 | final_guiding = 2.928
+[88/200] GBR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 2.652 | final_guiding = 2.652
+[89/200] GBR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.000 | final_guiding = 4.000
+[90/200] GBR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.983 | final_guiding = 2.983
+[91/200] IDN – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.920 | final_guiding = 5.920
+[92/200] IDN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.377 | final_guiding = 6.377
+[93/200] IDN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.276 | final_guiding = 4.276
+[94/200] IDN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.374 | final_guiding = 3.374
+[95/200] IDN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.107 | final_guiding = 2.107
+[96/200] IDN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.525 | final_guiding = 4.525
+[97/200] IDN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.296 | final_guiding = 3.296
+[98/200] IDN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.245 | final_guiding = 4.245
+[99/200] IDN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.454 | final_guiding = 4.454
+[100/200] IDN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.703 | final_guiding = 2.703
+[101/200] IND – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.132 | final_guiding = 6.132
+[102/200] IND – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.231 | final_guiding = 6.231
+[103/200] IND – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.617 | final_guiding = 4.617
+[104/200] IND – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.422 | final_guiding = 4.422
+[105/200] IND – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.214 | final_guiding = 3.214
+[106/200] IND – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.410 | final_guiding = 4.410
+[107/200] IND – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.618 | final_guiding = 4.618
+[108/200] IND – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.331 | final_guiding = 4.331
+[109/200] IND – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.404 | final_guiding = 4.404
+[110/200] IND – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.039 | final_guiding = 4.039
+[111/200] ITA – SP.DYN.LE00.IN
+   → best_guiding_cv = 3.863 | final_guiding = 3.863
+[112/200] ITA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 5.045 | final_guiding = 5.045
+[113/200] ITA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.394 | final_guiding = 4.394
+[114/200] ITA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.969 | final_guiding = 2.969
+[115/200] ITA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.674 | final_guiding = 4.674
+[116/200] ITA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.285 | final_guiding = 4.285
+[117/200] ITA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.114 | final_guiding = 4.114
+[118/200] ITA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.469 | final_guiding = 4.469
+[119/200] ITA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.915 | final_guiding = 3.915
+[120/200] ITA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.212 | final_guiding = 3.212
+[121/200] JPN – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.124 | final_guiding = 5.124
+[122/200] JPN – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 5.119 | final_guiding = 5.119
+[123/200] JPN – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.384 | final_guiding = 4.384
+[124/200] JPN – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.600 | final_guiding = 3.600
+[125/200] JPN – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.999 | final_guiding = 2.999
+[126/200] JPN – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.235 | final_guiding = 4.235
+[127/200] JPN – NY.GDP.MKTP.CD
+   → best_guiding_cv = 3.367 | final_guiding = 3.367
+[128/200] JPN – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.706 | final_guiding = 3.706
+[129/200] JPN – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.266 | final_guiding = 4.266
+[130/200] JPN – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.944 | final_guiding = 3.944
+[131/200] KOR – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.142 | final_guiding = 6.142
+[132/200] KOR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 3.927 | final_guiding = 3.927
+[133/200] KOR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.492 | final_guiding = 3.492
+[134/200] KOR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.653 | final_guiding = 4.653
+[135/200] KOR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.240 | final_guiding = 4.240
+[136/200] KOR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.775 | final_guiding = 3.775
+[137/200] KOR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 5.133 | final_guiding = 5.133
+[138/200] KOR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.015 | final_guiding = 3.015
+[139/200] KOR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 2.912 | final_guiding = 2.912
+[140/200] KOR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.189 | final_guiding = 4.189
+[141/200] MEX – SP.DYN.LE00.IN
+   → best_guiding_cv = 3.185 | final_guiding = 3.185
+[142/200] MEX – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.507 | final_guiding = 6.507
+[143/200] MEX – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.112 | final_guiding = 4.112
+[144/200] MEX – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.221 | final_guiding = 4.221
+[145/200] MEX – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.838 | final_guiding = 3.838
+[146/200] MEX – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.232 | final_guiding = 3.232
+[147/200] MEX – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.274 | final_guiding = 4.274
+[148/200] MEX – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.283 | final_guiding = 3.283
+[149/200] MEX – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.318 | final_guiding = 4.318
+[150/200] MEX – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 2.762 | final_guiding = 2.762
+[151/200] RUS – SP.DYN.LE00.IN
+   → best_guiding_cv = 3.612 | final_guiding = 3.612
+[152/200] RUS – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 5.665 | final_guiding = 5.665
+[153/200] RUS – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.495 | final_guiding = 4.495
+[154/200] RUS – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 3.788 | final_guiding = 3.788
+[155/200] RUS – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 4.840 | final_guiding = 4.840
+[156/200] RUS – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.587 | final_guiding = 3.587
+[157/200] RUS – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.231 | final_guiding = 4.231
+[158/200] RUS – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.239 | final_guiding = 4.239
+[159/200] RUS – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.314 | final_guiding = 4.314
+[160/200] RUS – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.440 | final_guiding = 4.440
+[161/200] SAU – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.108 | final_guiding = 6.108
+[162/200] SAU – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.461 | final_guiding = 6.461
+[163/200] SAU – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.084 | final_guiding = 4.084
+[164/200] SAU – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.289 | final_guiding = 2.289
+[165/200] SAU – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 3.168 | final_guiding = 3.168
+[166/200] SAU – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.673 | final_guiding = 4.673
+[167/200] SAU – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.263 | final_guiding = 4.263
+[168/200] SAU – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.268 | final_guiding = 4.268
+[169/200] SAU – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.411 | final_guiding = 4.411
+[170/200] SAU – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.018 | final_guiding = 3.018
+[171/200] TUR – SP.DYN.LE00.IN
+   → best_guiding_cv = 6.254 | final_guiding = 6.254
+[172/200] TUR – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.321 | final_guiding = 6.321
+[173/200] TUR – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.288 | final_guiding = 4.288
+[174/200] TUR – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.880 | final_guiding = 4.880
+[175/200] TUR – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 1.837 | final_guiding = 1.837
+[176/200] TUR – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 3.731 | final_guiding = 3.731
+[177/200] TUR – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.146 | final_guiding = 4.146
+[178/200] TUR – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.320 | final_guiding = 3.320
+[179/200] TUR – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.536 | final_guiding = 4.536
+[180/200] TUR – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 5.040 | final_guiding = 5.040
+[181/200] USA – SP.DYN.LE00.IN
+   → best_guiding_cv = 3.614 | final_guiding = 3.614
+[182/200] USA – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.110 | final_guiding = 6.110
+[183/200] USA – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 4.564 | final_guiding = 4.564
+[184/200] USA – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 2.415 | final_guiding = 2.415
+[185/200] USA – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.897 | final_guiding = 2.897
+[186/200] USA – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.273 | final_guiding = 4.273
+[187/200] USA – NY.GDP.MKTP.CD
+   → best_guiding_cv = 5.728 | final_guiding = 5.728
+[188/200] USA – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 3.935 | final_guiding = 3.935
+[189/200] USA – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 4.406 | final_guiding = 4.406
+[190/200] USA – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 4.221 | final_guiding = 4.221
+[191/200] ZAF – SP.DYN.LE00.IN
+   → best_guiding_cv = 5.986 | final_guiding = 5.986
+[192/200] ZAF – SP.URB.TOTL.IN.ZS
+   → best_guiding_cv = 6.527 | final_guiding = 6.527
+[193/200] ZAF – NV.AGR.TOTL.ZS
+   → best_guiding_cv = 3.465 | final_guiding = 3.465
+[194/200] ZAF – EG.USE.PCAP.KG.OE
+   → best_guiding_cv = 4.138 | final_guiding = 4.138
+[195/200] ZAF – FS.AST.PRVT.GD.ZS
+   → best_guiding_cv = 2.438 | final_guiding = 2.438
+[196/200] ZAF – NE.IMP.GNFS.ZS
+   → best_guiding_cv = 4.594 | final_guiding = 4.594
+[197/200] ZAF – NY.GDP.MKTP.CD
+   → best_guiding_cv = 4.259 | final_guiding = 4.259
+[198/200] ZAF – NE.EXP.GNFS.ZS
+   → best_guiding_cv = 4.272 | final_guiding = 4.272
+[199/200] ZAF – NY.GDP.MKTP.KD.ZG
+   → best_guiding_cv = 3.783 | final_guiding = 3.783
+[200/200] ZAF – EN.ATM.GHGT.KT.CE
+   → best_guiding_cv = 3.908 | final_guiding = 3.908
+Saved best‑summary to /Users/tianhaozhang/Desktop/XCountryOIRPrediction/figures/Chapter5tuning/ARIMA_best_summary.csv

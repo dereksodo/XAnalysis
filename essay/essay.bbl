@@ -76,39 +76,6 @@ Morten Jerven.
   Statistics and What to Do About It}.
 \newblock Cornell University Press, 2013.
 
-\bibitem{Bloom2008}
-David~E. Bloom, David Canning, Günther Fink, and Jocelyn~E. Finlay.
-\newblock Urbanization and the wealth of nations.
-\newblock {\em Science}, 319(5864):115--118, 2008.
-
-\bibitem{Montgomery2003}
-Mark~R. Montgomery, Richard Stren, Barney Cohen, and Holly~E. Reed.
-\newblock {\em Cities Transformed: Demographic Change and Its Implications in
-  the Developing World}.
-\newblock National Academies Press, 2003.
-
-\bibitem{Chen2011development}
-Yuyu Chen and Ginger~Zhe Jin.
-\newblock The road to capitalism: Economic reforms and institutional
-  persistence in china.
-\newblock {\em Journal of Comparative Economics}, 39(2):221--242, 2011.
-
-\bibitem{OECD2019india}
-OECD.
-\newblock Oecd economic surveys: India 2019, 2019.
-\newblock Organisation for Economic Co-operation and Development.
-
-\bibitem{zhang2020china}
-Wei Zhang and Yi~Chen.
-\newblock Macroeconomic policy coordination and its effects on growth stability
-  in china.
-\newblock {\em Journal of Policy Modeling}, 42(4):689--705, 2020.
-
-\bibitem{xie2018macroeconomic}
-Ping Xie and Zhi Wang.
-\newblock Macroeconomic modeling and data quality: Evidence from china.
-\newblock {\em China Economic Review}, 49:105--117, 2018.
-
 \bibitem{stock2002structural}
 James~H Stock and Mark~W Watson.
 \newblock Forecasting using principal components from a large number of
@@ -116,20 +83,54 @@ James~H Stock and Mark~W Watson.
 \newblock {\em Journal of the American Statistical Association},
   97(460):1167--1179, 2002.
 
-\bibitem{koop2013us}
+\bibitem{Koop2013Bayesian}
 Gary Koop and Dimitris Korobilis.
-\newblock U.s. business cycles and time-varying parameters.
-\newblock {\em Journal of Economic Dynamics and Control}, 37(1):114--128, 2013.
+\newblock Forecasting economic time series using flexible bayesian vars.
+\newblock {\em International Journal of Forecasting}, 29(4):685--700, 2013.
 
-\bibitem{lin2012newstructural}
+\bibitem{Barro1992Convergence}
+Robert~J. Barro and Xavier~Sala i~Martin.
+\newblock Convergence.
+\newblock {\em Journal of Political Economy}, 100(2):223--251, 1992.
+
+\bibitem{Prebisch1950}
+Ra\'ul Prebisch.
+\newblock {\em The Economic Development of Latin America and Its Principal
+  Problems}.
+\newblock United Nations Economic Commission for Latin America and the
+  Caribbean, New York, 1950.
+
+\bibitem{SachsWarner2001}
+Jeffrey~D. Sachs and Andrew~M. Warner.
+\newblock The curse of natural resources.
+\newblock {\em European Economic Review}, 45(4--6):827--838, 2001.
+
+\bibitem{VanDerPloegPoelhekke2009}
+Frederick van~der Ploeg and Steven Poelhekke.
+\newblock Volatility and the natural resource curse.
+\newblock {\em Oxford Economic Papers}, 61(4):727--760, 2009.
+
+\bibitem{IMF2023Germany}
+International~Monetary Fund.
+\newblock Germany: 2023 article iv consultation—press release; staff report,
+  2023.
+\newblock IMF Country Report No.~23/200.
+
+\bibitem{IMF2023Japan}
+International~Monetary Fund.
+\newblock Japan: 2023 article iv consultation—press release; staff report,
+  2023.
+\newblock IMF Country Report No.~23/270.
+
+\bibitem{IMF2023USA}
+International~Monetary Fund.
+\newblock United states: 2023 article iv consultation—press release; staff
+  report, 2023.
+\newblock IMF Country Report No.~23/220.
+
+\bibitem{Lin2012newstructural}
 Justin~Yifu Lin.
 \newblock New structural economics: A framework for rethinking development.
 \newblock {\em World Bank Research Observer}, 27(2):193--221, 2012.
-
-\bibitem{reifschneider2015usforecasting}
-Dave Reifschneider and Peter Tulip.
-\newblock Gauging the ability of the fomc’s economic projections to forecast
-  the path of the economy.
-\newblock {\em American Economic Review}, 105(5):56--60, 2015.
 
 \end{thebibliography}

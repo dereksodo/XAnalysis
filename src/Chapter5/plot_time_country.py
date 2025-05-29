@@ -84,16 +84,18 @@ def main():
     # 重新排 country_list 和矩阵行
     country_list = [country_list[i] for i in sort_idx]
     mat = mat[sort_idx, :]
+    row_means = row_means[sort_idx]
 
     # ----------------------------- PLOTTING -----------------------------
     fig, ax = plt.subplots(figsize=(1.2*len(feature_list), 0.5*len(country_list) + 2))
     im = ax.imshow(mat, aspect="auto", cmap="YlGnBu", interpolation="nearest")
     # X-ticks: feature names
     ax.set_xticks(np.arange(len(feature_list)))
-    ax.set_xticklabels(FEATURE_NAMES, rotation=40, ha="right", fontsize=9)
+    ax.set_xticklabels(FEATURE_NAMES, rotation=20, ha="right", fontsize=9)
     # Y-ticks: country codes
     ax.set_yticks(np.arange(len(country_list)))
-    ax.set_yticklabels(country_list, fontsize=9)
+    y_labels = [f"{row_means[i]:.2f}  {country_list[i]}" for i in range(len(country_list))]
+    ax.set_yticklabels(y_labels, fontsize=9)
     # Title
     ax.set_title("Per-Country Guiding Score (best model)", fontsize=15, pad=15)
     # Colorbar
