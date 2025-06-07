@@ -45,14 +45,6 @@ class selected_features:
     ]
 
 class get_scores:
-    @staticmethod
-    def feasibility_score(metrics):
-        score = 0
-        score += int(metrics["rmse/std"] < 1)
-        score += int(metrics["r2"] > 0.6)
-        score += int(metrics["mase"] < 1)
-        score += int(metrics["da"] > 0.7)
-        return score
 
     @staticmethod
     def guiding_score(metrics):

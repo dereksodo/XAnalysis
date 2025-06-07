@@ -7,6 +7,7 @@
 \usepackage{fullpage}
 \usepackage{subcaption}
 \usepackage{cite}
+\usepackage{amsfonts}
 \usepackage{float} % Added to allow [H] float specifier
 
 
@@ -363,23 +364,178 @@ From Figure~\ref{fig:CaseStudyBRICS5}, structural indicators again
  for cyclical variables~\cite{ClementsHendry2002}.
 
 
-\subsection{Hyperparameter Tuning}
 
 % --- Begin Chapter 6 ---
-\section{Chapter 6: Cross-Country Temporal Forecasting}
+% --- Begin Chapter 6 ---
+% --- Begin Chapter 6 ---
+\section{Bayesian Latent Structure Model for Multi-Country Economic Forecasting}
+
+\subsection{Model Motivation and Setup}
+
+\paragraph{Notation and Dimensions.}
+Let $m$ be the number of features and $n$ the number of countries. For each country $c$ at time $t$, let $\mathbf{Y}_{t,c} \in \mathbb{R}^m$ be the observed feature vector. Define a fixed feature mask $\mathcal{I} \subseteq \{1, \ldots, m\}$ of size $d$ (e.g., import/export-related indices) used for cross-country influence. For any country $j$, define $\mathbf{Z}_{t,j} \in \mathbb{R}^m$ by setting:
+\[
+\left(\mathbf{Z}_{t,j}\right)_i = 
+\begin{cases}
+\left(\mathbf{Y}_{t,j}\right)_i & \text{if } i \in \mathcal{I} \\
+0 & \text{otherwise}
+\end{cases}
+\]
+For any country $c$, define the stacked cross-feature matrix $X_{t,c} \in \mathbb{R}^{(n-1) \times m}$ as:
+\[
+X_{t,c} = \begin{bmatrix}
+\mathbf{Z}_{t-1,1}^\top \\
+\vdots \\
+\mathbf{Z}_{t-1,c-1}^\top \\
+\mathbf{Z}_{t-1,c+1}^\top \\
+\vdots \\
+\mathbf{Z}_{t-1,n}^\top
+\end{bmatrix}
+\]
+
+In this chapter, we propose a Bayesian latent structure framework designed to forecast key economic indicators across multiple countries by integrating time-lagged dependencies and cross-national interactions. Our approach aims to strike a balance between interpretability, forecasting accuracy, and theoretical grounding.
+
+Let $\mathbf{Y}_{t,c}$ denote the standardized vector of economic indicators for country $c$ in year $t$. We assume the observed data can be explained by latent shared influences through a generative model of the form:
+\[
+\mathbf{Y}_{t,c} = \sum_{i=1}^\tau  A_{t,c}^i \mathbf{Y}_{t - i,c} + \sum_{j \neq c} M_{j,c} \mathbf{Z}_{t-1,j} + \boldsymbol{\epsilon}_{t,c}, \quad \boldsymbol{\epsilon}_{t,c} \sim \mathcal{N}(\mathbf{0}, \sigma^2 I)
+\]
+
+Here, the dimensions of the variables are as follows: 
+$\mathbf{Y}_{t,c} \in \mathbb{R}^m$ represents the observed indicators for country $c$ at time $t$, 
+$A_{t,c} \in \mathbb{R}^{m \times m}$ is the transition matrix for self-history, 
+$M_{j,c} \in \mathbb{R}^{m \times m}$ maps the external features $\mathbf{Z}_{t-1,j} \in \mathbb{R}^m$ from country $j$ to the output space, 
+and $\boldsymbol{\epsilon}_{t,c} \in \mathbb{R}^m$ is the noise term.
+
+The model incorporates three main components:
+\begin{itemize}
+  \item \textbf{Self-History Influence:} We include the past $\tau$ years of the country's own indicators $\mathbf{Y}_{t-i,c}$, aggregated with exponentially weighted powers of matrix $A$. To ensure diminishing influence over time and model stability, we assume $\det A < 1$.
+  \item \textbf{Cross-Country Influence:} For external effects, we use the sparse cross-feature vectors $\mathbf{Z}_{t-1,j} \in \mathbb{R}^m$ as defined above, with only a predefined subset of $d$ components (corresponding to selected cross features) nonzero. This sparse representation ensures that $\mathbf{Z}$ has the same dimension as $\mathbf{Y}$, but only encodes relevant cross-national influences. We define a set of matrices $\{M_{j,c} \in \mathbb{R}^{m \times m} \mid j \neq c\}$ that model how the retained features from each country $j$ influence the target country $c$. The total cross-country effect is computed as:
+  \[
+  \sum_{j \neq c} M_{j,c} \mathbf{Z}_{t-1,j}
+  \]
+  This setup allows each $M_{j,c}$ to focus on relevant dimensions, while preserving compatibility with $\mathbf{Y}_{t,c}$.
+  \item \textbf{Noise Term:} The additive noise $\boldsymbol{\epsilon}_{t,c}$ accounts for unexplained variability, assumed to be i.i.d. Gaussian with zero mean and isotropic covariance.
+\end{itemize}
+
+In this paper, we select $\tau = 2$ based on empirical evidence that XGB\_lag2 and XGB\_lag3 models show minimal performance difference in earlier experiments, indicating that higher powers of $A$ (i.e., $A^3$ and beyond) have negligible contribution. We set $d = 2$ to focus on two key cross-country indicators—import and export proportions—which capture essential aspects of international economic interactions.
 
 
-\subsection{Modeling Setup}
-% Define time alignment across countries. Optional: DTW similarity, cross-country lagged features.
+In this formulation, we assume a uniform cross-country influence mechanism across all countries, which allows simplification in later estimation steps.
 
-\subsection{Cross-National Forecasting}
-% Analyze how models trained on one or multiple countries generalize to others.
 
-\subsection{Trend and Volatility Analysis}
-% Identify persistent temporal trends vs high-volatility indicators across countries.
+% --- Section 6.2: Model Estimation and Inference ---
+\subsection{Simplified Estimation with Shared Cross-Country Influence}
 
-\subsection{Discussion}
-% Reflect on structural similarity, transferable patterns, and policy relevance of findings.
+\subsubsection*{6.2.1 Assumptions and Notation}
+
+We assume that all countries share the same cross-country influence weights $M \in \mathbb{R}^{m \times m}$ applied to a masked cross-feature sum. This allows us to define:
+\[
+\mathbf{Q}_{t,c} = \sum_{j \ne c} \mathbf{Z}_{t-1,j}
+\]
+where each $\mathbf{Z}_{t-1,j}$ is a masked version of $\mathbf{Y}_{t-1,j}$ retaining only $d$ predefined features. The vector $\mathbf{Q}_{t,c} \in \mathbb{R}^m$ is used to represent the aggregated cross-country input for predicting $\mathbf{Y}_{t,c}$.
+
+% 6.2.2 Ridge Regression Estimation (Restored with full mathematical derivation)
+
+ \subsubsection*{6.2.2 Ridge Regression Estimation}
+
+The prediction for each country $c$ at time $t$ is:
+\[
+\hat{\mathbf{Y}}_{t,c} = A^1 \mathbf{Y}_{t-1,c} + A^2 \mathbf{Y}_{t-2,c} + \sum_{j \ne c} M_j \mathbf{Z}_{t-1,j}
+\]
+We denote the prediction residual as:
+\[
+\mathbf{r}_{t,c} = \mathbf{Y}_{t,c} - \hat{\mathbf{Y}}_{t,c}
+\]
+The objective is to minimize the total loss over all years and countries using a ridge penalty:
+\[
+\mathcal{L} = \sum_{t,c} \left\| \mathbf{r}_{t,c} \right\|_2^2 + \lambda_A \left( \|A^1\|_F^2 + \|A^2\|_F^2 \right) + \lambda_M \sum_j \|M_j\|_F^2
+\]
+where $\lambda_A$ and $\lambda_M$ are regularization parameters.
+
+To estimate the parameters, we organize the inputs into a linear model.
+
+For each $(t, c)$, define the concatenated input vector:
+\[
+\mathbf{h}_{t,c} = \begin{bmatrix}
+\mathbf{Y}_{t-1,c}^T \\
+\mathbf{Y}_{t-2,c}^T \\
+\{\mathbf{Z}_{t-1,j}\}_{j \ne c}^T
+\end{bmatrix}
+\in \mathbb{R}^{m(\tau + n - 1)}
+\]
+and corresponding parameter block:
+\[
+\mathbf{W}_c = \begin{bmatrix}
+(A^1)^T \\
+(A^2)^T \\
+\{M_j\}_{j \ne c}^T
+\end{bmatrix}
+\in \mathbb{R}^{m(\tau + n - 1) \times m}
+\]
+The prediction becomes:
+\[
+\hat{\mathbf{Y}}_{t,c} = \mathbf{W}_c^\top \mathbf{h}_{t,c}
+\]
+Letting $\mathbf{H}_c$ be the stacked input matrix and $\mathbf{Y}_c$ the corresponding outputs over time:
+\[
+\mathbf{H}_c = \begin{bmatrix}
+\mathbf{h}_{\tau+1, c}^\top \\
+\vdots \\
+\mathbf{h}_{T, c}^\top
+\end{bmatrix}
+\in \mathbb{R}^{(T - \tau) \times m(\tau + n - 1)}, \quad
+\mathbf{Y}_c = \begin{bmatrix}
+\mathbf{Y}_{\tau+1, c}^\top \\
+\vdots \\
+\mathbf{Y}_{T, c}^\top
+\end{bmatrix}
+\in \mathbb{R}^{(T - \tau) \times m}
+\]
+Initially, we set the regularization strength for both the self-influence terms \( A \) and cross-influence terms \( M \) to be the same, i.e., \(\lambda_A = \lambda_M\).
+Moreover, we let \(\lambda_A = \lambda_M\ = 1.0\).
+Then the objective is:
+\[
+\mathcal{L}_c = \| \mathbf{Y}_c - \mathbf{H}_c \mathbf{W}_c \|_F^2 + \lambda \| \mathbf{W}_c \|_F^2
+\]
+and the closed-form ridge solution is:
+\[
+\mathbf{W}_c = (\mathbf{H}_c^\top \mathbf{H}_c + \lambda I)^{-1} \mathbf{H}_c^\top \mathbf{Y}_c
+\]
+
+This simplification facilitates direct estimation using standard ridge regression. The guiding scores of this baseline are shown in Figure~\ref{fig:guiding_score_ridge}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{guiding_score_ridge.png}
+  \caption{Guiding scores for Ridge vs Naive using uniform regularization}
+  \label{fig:guiding_score_ridge}
+\end{figure}
+
+To better capture the different roles of \( A \) and \( M \), we then optimize \(\lambda_A\) and \(\lambda_M\) separately. This allows for more flexible control over self and cross influence regularization strengths. 
+The updated guiding score comparison after separate tuning is presented in Figure~\ref{fig:guiding_score_ridge2}.
+
+% --- Inserted: Ridge2 guiding score figure and discussion ---
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{guiding_score_ridge2.png}
+  \caption{Guiding scores after parameter tuning for each (country, feature) pair.}
+  \label{fig:guiding_score_ridge2}
+\end{figure}
+
+Figure~\ref{fig:guiding_score_ridge2} reveals that tuning $(\lambda_A, \lambda_M)$ for each individual (country, feature) pair yields consistent improvements in guiding score relative to the uniform-regularization baseline in Figure~\ref{fig:guiding_score_ridge}. 
+This gain is most apparent for structural indicators and stable countries, where tailored regularization allows the model to better separate temporal inertia from cross-national influences. 
+
+% 6.2.3 Model Evaluation and Visualization (content removed as per instructions)
+
+\subsubsection*{6.2.3 Model Evaluation and Visualization}
+
+
+
+
+% --- Section 6.3: Generalized Cross-Country Modeling ---
+\section{Generalized Cross-Country Modeling}
+
+All cross-country influence is encoded by the sum $\mathbf{Q}_{t,c} = \sum_{j \ne c} \mathbf{Z}_{t-1,j}$, preserving structural sparsity while retaining matrix compatibility.
 
 \section{Conclusion}
 

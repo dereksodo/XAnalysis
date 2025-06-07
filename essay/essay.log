@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 MAY 2025 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2025 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -202,6 +202,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count111
@@ -212,18 +218,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux)
 \openout1 = `essay.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
@@ -281,14 +287,22 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.toc)
@@ -297,9 +311,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
 
  [2] [3]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 
-Overfull \hbox (16.47328pt too wide) in paragraph at lines 64--65
+Overfull \hbox (16.47328pt too wide) in paragraph at lines 65--66
 []\OT1/cmr/m/n/12 Main dataset: [World Bank Data by Indicators](https://github.com/light-and-salt/World-
  []
 
@@ -307,37 +321,37 @@ Overfull \hbox (16.47328pt too wide) in paragraph at lines 64--65
 <Combined_Metrics_figure1.png, id=35, 1156.32pt x 722.7pt>
 File: Combined_Metrics_figure1.png Graphic file (type png)
 <use Combined_Metrics_figure1.png>
-Package pdftex.def Info: Combined_Metrics_figure1.png  used on input line 157.
+Package pdftex.def Info: Combined_Metrics_figure1.png  used on input line 158.
 (pdftex.def)             Requested size: 469.75502pt x 293.59615pt.
 <Average_GuidingScore_figure2.png, id=37, 722.7pt x 361.35pt>
 File: Average_GuidingScore_figure2.png Graphic file (type png)
 <use Average_GuidingScore_figure2.png>
-Package pdftex.def Info: Average_GuidingScore_figure2.png  used on input line 164.
+Package pdftex.def Info: Average_GuidingScore_figure2.png  used on input line 165.
 (pdftex.def)             Requested size: 469.75502pt x 234.88023pt.
 <1960_2020_XGB_metrics.png, id=38, 1148.73164pt x 715.473pt>
 File: 1960_2020_XGB_metrics.png Graphic file (type png)
 <use 1960_2020_XGB_metrics.png>
-Package pdftex.def Info: 1960_2020_XGB_metrics.png  used on input line 170.
+Package pdftex.def Info: 1960_2020_XGB_metrics.png  used on input line 171.
 (pdftex.def)             Requested size: 469.75502pt x 292.58162pt.
  [7 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Combined_Metrics_figure1.png>] [8 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_GuidingScore_figure2.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_metrics.png>] [9]
 <1960_2020_XGB_tuning_metrics.png, id=53, 999.9759pt x 388.5717pt>
 File: 1960_2020_XGB_tuning_metrics.png Graphic file (type png)
 <use 1960_2020_XGB_tuning_metrics.png>
-Package pdftex.def Info: 1960_2020_XGB_tuning_metrics.png  used on input line 210.
+Package pdftex.def Info: 1960_2020_XGB_tuning_metrics.png  used on input line 211.
 (pdftex.def)             Requested size: 422.77664pt x 164.27809pt.
 <1960_2020_RF_tuning_metrics.png, id=54, 999.9759pt x 388.5717pt>
 File: 1960_2020_RF_tuning_metrics.png Graphic file (type png)
 <use 1960_2020_RF_tuning_metrics.png>
-Package pdftex.def Info: 1960_2020_RF_tuning_metrics.png  used on input line 217.
+Package pdftex.def Info: 1960_2020_RF_tuning_metrics.png  used on input line 218.
 (pdftex.def)             Requested size: 422.77664pt x 164.27809pt.
  [10 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_tuning_metrics.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_RF_tuning_metrics.png>] [11]
 <featurewise_model_comparison.png, id=63, 1144.0341pt x 754.017pt>
 File: featurewise_model_comparison.png Graphic file (type png)
 <use featurewise_model_comparison.png>
-Package pdftex.def Info: featurewise_model_comparison.png  used on input line 275.
+Package pdftex.def Info: featurewise_model_comparison.png  used on input line 276.
 (pdftex.def)             Requested size: 469.75502pt x 309.59767pt.
 
-Underfull \hbox (badness 1466) in paragraph at lines 276--276
+Underfull \hbox (badness 1466) in paragraph at lines 277--277
 []\OT1/cmr/m/n/12 Figure 5: |Com-par-i-son of model per-for-mance across in-di-ca-tors us-ing four met-rics:
  []
 
@@ -345,7 +359,7 @@ Underfull \hbox (badness 1466) in paragraph at lines 276--276
 <guiding_score_combined.png, id=67, 1084.05pt x 433.62pt>
 File: guiding_score_combined.png Graphic file (type png)
 <use guiding_score_combined.png>
-Package pdftex.def Info: guiding_score_combined.png  used on input line 282.
+Package pdftex.def Info: guiding_score_combined.png  used on input line 283.
 (pdftex.def)             Requested size: 469.75502pt x 187.90198pt.
 
 
@@ -355,57 +369,68 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <heat_map.png, id=74, 867.24pt x 867.24pt>
 File: heat_map.png Graphic file (type png)
 <use heat_map.png>
-Package pdftex.def Info: heat_map.png  used on input line 303.
+Package pdftex.def Info: heat_map.png  used on input line 304.
 (pdftex.def)             Requested size: 469.75502pt x 469.75827pt.
  [14 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_combined.png>] [15 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/heat_map.png>]
-Overfull \hbox (15.59807pt too wide) in paragraph at lines 315--318
+Overfull \hbox (15.59807pt too wide) in paragraph at lines 316--319
 []\OT1/cmr/bx/n/12 (ii) Macro[]financial vari-ables ex-hibit strong cross[]country het-ero-gene-ity. \OT1/cmr/m/n/12 Columns
  []
 
 
-Overfull \hbox (4.74422pt too wide) in paragraph at lines 315--318
+Overfull \hbox (4.74422pt too wide) in paragraph at lines 316--319
 \OT1/cmr/m/n/12 for private[]sector as-sets, ex-ports, and im-ports ap-pear markedly lighter for commodity[]oriented
  []
 
 
-Overfull \hbox (5.46912pt too wide) in paragraph at lines 315--318
+Overfull \hbox (5.46912pt too wide) in paragraph at lines 316--319
 \OT1/cmr/m/n/12 economies such as RUS [18, 19] and IDN [20] |an out-come that mir-rors the high terms[]of[]trade
  []
 
 
-Overfull \hbox (14.01357pt too wide) in paragraph at lines 321--329
+Overfull \hbox (14.01357pt too wide) in paragraph at lines 322--330
 \OT1/cmr/m/n/12 driven less by mod-elling tech-nique and more by struc-tural eco-nomic char-ac-ter-is-tics|specifically,
  []
 
 <comparison_feature_G7&EU.png, id=83, 939.51pt x 433.62pt>
 File: comparison_feature_G7&EU.png Graphic file (type png)
 <use comparison_feature_G7&EU.png>
-Package pdftex.def Info: comparison_feature_G7&EU.png  used on input line 333.
+Package pdftex.def Info: comparison_feature_G7&EU.png  used on input line 334.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 [16]
 <comparison_feature_BRICS.png, id=87, 939.51pt x 433.62pt>
 File: comparison_feature_BRICS.png Graphic file (type png)
 <use comparison_feature_BRICS.png>
-Package pdftex.def Info: comparison_feature_BRICS.png  used on input line 349.
+Package pdftex.def Info: comparison_feature_BRICS.png  used on input line 350.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_G7&EU.png>] [18 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_BRICS.png>] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [19]) [20] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux) ) 
+[17 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_G7&EU.png>] [18 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_BRICS.png>] [19] [20]
+<guiding_score_ridge.png, id=105, 1156.32pt x 433.62pt>
+File: guiding_score_ridge.png Graphic file (type png)
+<use guiding_score_ridge.png>
+Package pdftex.def Info: guiding_score_ridge.png  used on input line 509.
+(pdftex.def)             Requested size: 422.77664pt x 158.53795pt.
+<guiding_score_ridge2.png, id=106, 1156.32pt x 433.62pt>
+File: guiding_score_ridge2.png Graphic file (type png)
+<use guiding_score_ridge2.png>
+Package pdftex.def Info: guiding_score_ridge2.png  used on input line 520.
+(pdftex.def)             Requested size: 422.77664pt x 158.53795pt.
+ [21 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge.png>] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [22 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge2.png>] [23]) [24] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux) ) 
 Here is how much of TeX's memory you used:
- 4567 strings out of 492649
- 71602 string characters out of 6129622
- 143016 words of memory out of 5000000
- 8353 multiletter control sequences out of 15000+600000
- 12292 words of font info for 45 fonts, out of 8000000 for 9000
+ 4681 strings out of 492649
+ 73370 string characters out of 6129622
+ 143487 words of memory out of 5000000
+ 8441 multiletter control sequences out of 15000+600000
+ 18050 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,94p,1212b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (20 pages, 4209235 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (24 pages, 5013318 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 183 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

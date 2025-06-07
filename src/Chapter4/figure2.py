@@ -59,7 +59,7 @@ def plot_average_guiding_scores():
     bar1 = ax.bar(x - width/2, y1, width, label='1960-2020')
     bar2 = ax.bar(x + width/2, y2, width, label='2010-2020')
     ax.axhline(2.0, color='g', linestyle='--', label='Guiding Score = 2.0')
-    ax.set_ylim(0, 3.0)
+    ax.set_ylim(0, 7)
     ax.set_ylabel("Average Guiding Score")
     ax.set_title("Average Guiding Score for Each Model")
     ax.set_xticks(x)
