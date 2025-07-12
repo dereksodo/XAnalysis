@@ -1,63 +1,60 @@
-# Cross-Country Overnight Interest Rate Prediction
+# Cross‑Country Macroeconomic Indicator Forecasting  
+_A World‑Bank Panel (1960 – 2020)_
 
 ## Project Overview
+This repository contains the code, data pipelines, and LaTeX manuscript for a three‑stage machine‑learning framework that forecasts ten key national indicators (life expectancy, urbanisation share, energy use, trade ratios, GDP level & growth, etc.) across G‑20 economies using the World Bank annual panel from **1960 – 2020**.
 
-This project focuses on forecasting overnight interest rate (OIR) changes for major global economies using machine learning techniques and macro-structural features. The analysis covers G20 countries (excluding the African Union) and uses annual data from 1960 to 2020. Our objective is to predict both the timing and magnitude of overnight rate changes, leveraging demographic and economic indicators.
+The research corresponds to the essay **“Predicting National Indicators from World Bank Data: A Machine‑Learning Pipeline (1960–2020)”**.  
+The workflow proceeds in three chapters:
 
-## Motivation
+| Chapter | Task | Models |
+|---------|------|--------|
+| 4 | **Cross‑indicator** prediction: each indicator forecast from the other nine | Linear/Ridge/Lasso, SVR, KNN, Random Forest, XGBoost |
+| 5 | **Country‑level time‑series** forecasting with lags | Naïve, ARIMA, XGB lag‑2, LSTM lag‑2, rolling variants |
+| 6 | **Cross‑country latent‑structure ridge**: couples countries through import/export links | Block‑ridge with tuned \(\lambda_A,\lambda_M\), VAR baseline |
 
-Overnight interest rates play a crucial role in monetary policy and financial markets. Traditional forecasting approaches usually target single countries or rely heavily on financial market signals. Here, we investigate whether demographic and macro-structural features—such as population trends and economic indicators—can provide predictive power in a cross-country, long-term context.
+A unified **Guiding Score** (weighted RMSE/STD, \(R^2\), MASE, Directional Accuracy) defines when a forecast is statistically *feasible*.
 
-## Dataset
+## Repository Layout
+```
+essay/          # LaTeX source of the paper
+figures/        # Generated plots
+data/           # Cleaned World‑Bank panels (CSV)
+src/
+  DataProcessing/
+  Chapter4/
+  Chapter5/
+  Chapter6/
+```
 
-- **Countries**: G20 countries, excluding the African Union
-- **Years**: 1960–2020 (annual data)
-- **Target**: Overnight interest rate (OIR) for each country and year
-- **Features**:
-    - Population (total, growth rate)
-    - Gender ratio
-    - Birth cohort statistics (e.g., population born in specific years, population aged 15, etc.)
-    - GDP, GDP growth rate
-    - Inflation rate
-    - Unemployment rate
-    - Fiscal balance and other macroeconomic indicators
-    - Lagged features (e.g., previous year's OIR)
-    - Country and time fixed effects
+## Data
+* Primary source: **[World Bank Data by Indicators](https://github.com/light-and-salt/World-Bank-Data-by-Indicators)**  
+* Coverage: G‑20 economies (minus African Union placeholder)  
+* Ten indicators kept where non‑missing ratio ≥ 60 %.  
+* Missing annual values are **linearly interpolated** along the time axis.
 
-All macroeconomic and demographic data are sourced from [World Bank Data by Indicators](https://github.com/light-and-salt/World-Bank-Data-by-Indicators).
 
-## Methodology
+Generated figures appear in `figures/ChapterX/` and are automatically picked up by the LaTeX build.
 
-- **Baseline Models**: Autoregressive models (AR), linear regression
-- **Machine Learning Models**: SVMs and others
-- **Evaluation Metrics**:
-    - Classification: Accuracy, Precision, Recall, F1-score (predicting if OIR will change)
-    - Regression: MAE, RMSE (predicting the magnitude of OIR change)
-- **Analysis**: Feature importance, cross-country comparison, error analysis
+## Key Results
+* Ensemble trees (XGB, RF) beat linear baselines on **7 / 10** indicators;  
+  GDP growth remains the hardest, aligning with literature on the “growth‑forecast puzzle”.
+* Country‑aware ridge captures modest cross‑border signal—imports & exports drive most spill‑over gains.
+* Naïve lag‑1 forecast still wins **Directional Accuracy** for slow‑moving structural features.
 
-## How to Use
+## Limitations
+See `essay.tex` § Experimental Limitations for details—robustness checks, wider hyper‑parameter search, and probabilistic forecasts are deferred to future work.
 
-1. Clone this repository.
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Explore the workflow in the `notebooks/` directory for data exploration, modeling, and analysis.
-4. For automated experiments, use the scripts in the `src/` directory.
+## Future Work
+The “Summary and Future Work” chapter sketches:
+* Block hold‑out & noise‑injection robustness budget
+* Quantile XGBoost for 80 % prediction intervals
+* Lightweight neural nets (TCN, country‑aware GRU)
+* Bayesian shrinkage for calibrated uncertainty
 
 ## License
+For academic, non‑commercial use only. See `LICENSE`.
 
-For academic and research purposes only. See LICENSE for details.
-
-## Contact
-
-For questions or collaboration, please contact Jiadong Zhang at dereksodo@gmail.com
-
-## Data Sources
-
-- Main dataset: [World Bank Data by Indicators](https://github.com/light-and-salt/World-Bank-Data-by-Indicators) (GitHub repository)
-- Supplementary sources: National central banks, IMF, OECD, United Nations
-
-## Acknowledgements
-
-We gratefully acknowledge the maintainers of [World Bank Data by Indicators](https://github.com/light-and-salt/World-Bank-Data-by-Indicators) for providing comprehensive global economic and demographic data.
+## Author
+Jiadong Zhang — dereksodo@gmail.com  
+CS229 final project (page‑limit accidentally exceeded 🎉). ChatGPT o3 assisted in code and manuscript drafting.
