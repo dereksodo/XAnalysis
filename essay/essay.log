@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2025 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUL 2025 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -215,67 +215,140 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box32
 \@float@everytoks=\toks25
 \@floatcapt=\box33
-) (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux)
-\openout1 = `essay.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen155
-\scratchbox=\box34
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen156
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks27
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen155
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count114
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count115
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen156
+\Fld@menulength=\count116
+\Field@Width=\dimen157
+\Fld@charsize=\dimen158
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip49
+) (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux)
+\openout1 = `essay.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen159
+\scratchbox=\box34
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen160
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
@@ -286,151 +359,193 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 20.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count128
+)
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
+ (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.out) (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.out)
+\@outlinefile=\write3
+\openout3 = `essay.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+
+Overfull \hbox (1.232pt too wide) in paragraph at lines 25--31
+[]\OT1/cmr/m/n/10.95 This study builds a three-stage, data-driven pipeline for fore-cast-ing na-tional macroe-
+ []
+
+[1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.toc)
-\tf@toc=\write3
-\openout3 = `essay.toc'.
+\tf@toc=\write4
+\openout4 = `essay.toc'.
 
- [2] [3]
+ [2]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
-
-Overfull \hbox (16.47328pt too wide) in paragraph at lines 65--66
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+ [3] [4]
+Overfull \hbox (16.47328pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/n/12 Main dataset: [World Bank Data by Indicators](https://github.com/light-and-salt/World-
  []
 
-[4] [5] [6]
-<Combined_Metrics_figure1.png, id=35, 1156.32pt x 722.7pt>
+[5] [6]
+<Combined_Metrics_figure1.png, id=228, 1156.32pt x 722.7pt>
 File: Combined_Metrics_figure1.png Graphic file (type png)
 <use Combined_Metrics_figure1.png>
-Package pdftex.def Info: Combined_Metrics_figure1.png  used on input line 158.
+Package pdftex.def Info: Combined_Metrics_figure1.png  used on input line 183.
 (pdftex.def)             Requested size: 469.75502pt x 293.59615pt.
-<Average_GuidingScore_figure2.png, id=37, 722.7pt x 361.35pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Average_GuidingScore_figure2.png, id=230, 722.7pt x 361.35pt>
 File: Average_GuidingScore_figure2.png Graphic file (type png)
 <use Average_GuidingScore_figure2.png>
-Package pdftex.def Info: Average_GuidingScore_figure2.png  used on input line 165.
+Package pdftex.def Info: Average_GuidingScore_figure2.png  used on input line 190.
 (pdftex.def)             Requested size: 469.75502pt x 234.88023pt.
-<1960_2020_XGB_metrics.png, id=38, 1148.73164pt x 715.473pt>
+<1960_2020_XGB_metrics.png, id=231, 1148.73164pt x 715.473pt>
 File: 1960_2020_XGB_metrics.png Graphic file (type png)
 <use 1960_2020_XGB_metrics.png>
-Package pdftex.def Info: 1960_2020_XGB_metrics.png  used on input line 171.
+Package pdftex.def Info: 1960_2020_XGB_metrics.png  used on input line 196.
 (pdftex.def)             Requested size: 469.75502pt x 292.58162pt.
- [7 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Combined_Metrics_figure1.png>] [8 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_GuidingScore_figure2.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_metrics.png>] [9]
-<1960_2020_XGB_tuning_metrics.png, id=53, 999.9759pt x 388.5717pt>
+[7] [8 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Combined_Metrics_figure1.png>] [9 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/Average_GuidingScore_figure2.png>] [10 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_metrics.png>]
+<1960_2020_XGB_tuning_metrics.png, id=263, 999.9759pt x 388.5717pt>
 File: 1960_2020_XGB_tuning_metrics.png Graphic file (type png)
 <use 1960_2020_XGB_tuning_metrics.png>
-Package pdftex.def Info: 1960_2020_XGB_tuning_metrics.png  used on input line 211.
+Package pdftex.def Info: 1960_2020_XGB_tuning_metrics.png  used on input line 236.
 (pdftex.def)             Requested size: 422.77664pt x 164.27809pt.
-<1960_2020_RF_tuning_metrics.png, id=54, 999.9759pt x 388.5717pt>
+<1960_2020_RF_tuning_metrics.png, id=264, 999.9759pt x 388.5717pt>
 File: 1960_2020_RF_tuning_metrics.png Graphic file (type png)
 <use 1960_2020_RF_tuning_metrics.png>
-Package pdftex.def Info: 1960_2020_RF_tuning_metrics.png  used on input line 218.
+Package pdftex.def Info: 1960_2020_RF_tuning_metrics.png  used on input line 243.
 (pdftex.def)             Requested size: 422.77664pt x 164.27809pt.
- [10 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_tuning_metrics.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_RF_tuning_metrics.png>] [11]
-<featurewise_model_comparison.png, id=63, 1144.0341pt x 754.017pt>
+ [11] [12 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_XGB_tuning_metrics.png> </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/1960_2020_RF_tuning_metrics.png>] [13]
+<featurewise_model_comparison.png, id=296, 1144.0341pt x 754.017pt>
 File: featurewise_model_comparison.png Graphic file (type png)
 <use featurewise_model_comparison.png>
-Package pdftex.def Info: featurewise_model_comparison.png  used on input line 276.
+Package pdftex.def Info: featurewise_model_comparison.png  used on input line 302.
 (pdftex.def)             Requested size: 469.75502pt x 309.59767pt.
 
-Underfull \hbox (badness 1466) in paragraph at lines 277--277
+Underfull \hbox (badness 1466) in paragraph at lines 303--303
 []\OT1/cmr/m/n/12 Figure 5: |Com-par-i-son of model per-for-mance across in-di-ca-tors us-ing four met-rics:
  []
 
-[12]
-<guiding_score_combined.png, id=67, 1084.05pt x 433.62pt>
+[14]
+<guiding_score_combined.png, id=301, 1084.05pt x 433.62pt>
 File: guiding_score_combined.png Graphic file (type png)
 <use guiding_score_combined.png>
-Package pdftex.def Info: guiding_score_combined.png  used on input line 283.
+Package pdftex.def Info: guiding_score_combined.png  used on input line 309.
 (pdftex.def)             Requested size: 469.75502pt x 187.90198pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/featurewise_model_comparison.png>]
-<heat_map.png, id=74, 867.24pt x 867.24pt>
+[15 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/featurewise_model_comparison.png>]
+<heat_map.png, id=320, 867.24pt x 867.24pt>
 File: heat_map.png Graphic file (type png)
 <use heat_map.png>
-Package pdftex.def Info: heat_map.png  used on input line 304.
+Package pdftex.def Info: heat_map.png  used on input line 330.
 (pdftex.def)             Requested size: 469.75502pt x 469.75827pt.
- [14 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_combined.png>] [15 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/heat_map.png>]
-Overfull \hbox (15.59807pt too wide) in paragraph at lines 316--319
-[]\OT1/cmr/bx/n/12 (ii) Macro[]financial vari-ables ex-hibit strong cross[]country het-ero-gene-ity. \OT1/cmr/m/n/12 Columns
+ [16 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_combined.png>] [17 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/heat_map.png>]
+Overfull \hbox (15.59807pt too wide) in paragraph at lines 342--345
+[]\OT1/cmr/bx/n/12 (ii) Macro-financial vari-ables ex-hibit strong cross-country het-ero-gene-ity. \OT1/cmr/m/n/12 Columns
  []
 
 
-Overfull \hbox (4.74422pt too wide) in paragraph at lines 316--319
-\OT1/cmr/m/n/12 for private[]sector as-sets, ex-ports, and im-ports ap-pear markedly lighter for commodity[]oriented
- []
-
-
-Overfull \hbox (5.46912pt too wide) in paragraph at lines 316--319
-\OT1/cmr/m/n/12 economies such as RUS [18, 19] and IDN [20] |an out-come that mir-rors the high terms[]of[]trade
- []
-
-
-Overfull \hbox (14.01357pt too wide) in paragraph at lines 322--330
+Overfull \hbox (14.01357pt too wide) in paragraph at lines 348--356
 \OT1/cmr/m/n/12 driven less by mod-elling tech-nique and more by struc-tural eco-nomic char-ac-ter-is-tics|specifically,
  []
 
-<comparison_feature_G7&EU.png, id=83, 939.51pt x 433.62pt>
+<comparison_feature_G7&EU.png, id=346, 939.51pt x 433.62pt>
 File: comparison_feature_G7&EU.png Graphic file (type png)
 <use comparison_feature_G7&EU.png>
-Package pdftex.def Info: comparison_feature_G7&EU.png  used on input line 334.
+Package pdftex.def Info: comparison_feature_G7&EU.png  used on input line 360.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
-[16]
-<comparison_feature_BRICS.png, id=87, 939.51pt x 433.62pt>
+[18]
+<comparison_feature_BRICS.png, id=359, 939.51pt x 433.62pt>
 File: comparison_feature_BRICS.png Graphic file (type png)
 <use comparison_feature_BRICS.png>
-Package pdftex.def Info: comparison_feature_BRICS.png  used on input line 350.
+Package pdftex.def Info: comparison_feature_BRICS.png  used on input line 376.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_G7&EU.png>] [18 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_BRICS.png>] [19] [20]
-<guiding_score_ridge.png, id=105, 1156.32pt x 433.62pt>
+
+Overfull \hbox (12.69473pt too wide) in paragraph at lines 394--394
+[]\OT1/cmr/bx/n/17.28 Latent-Structure Ridge Model for Multi-Country Eco-
+ []
+
+[19 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_G7&EU.png>] [20 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/comparison_feature_BRICS.png>]
+Overfull \hbox (19.69269pt too wide) in paragraph at lines 450--450
+[]\OT1/cmr/bx/n/14.4 Estimation, Tun-ing, and Eval-u-a-tion un-der Shared Cross-Country
+ []
+
+[21] [22]
+<guiding_score_ridge.png, id=390, 1156.32pt x 433.62pt>
 File: guiding_score_ridge.png Graphic file (type png)
 <use guiding_score_ridge.png>
-Package pdftex.def Info: guiding_score_ridge.png  used on input line 509.
+Package pdftex.def Info: guiding_score_ridge.png  used on input line 537.
 (pdftex.def)             Requested size: 422.77664pt x 158.53795pt.
-<guiding_score_ridge2.png, id=106, 1156.32pt x 433.62pt>
-File: guiding_score_ridge2.png Graphic file (type png)
-<use guiding_score_ridge2.png>
-Package pdftex.def Info: guiding_score_ridge2.png  used on input line 520.
+ [23 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge.png>]
+<guiding_score_ridge3.png, id=401, 1156.32pt x 433.62pt>
+File: guiding_score_ridge3.png Graphic file (type png)
+<use guiding_score_ridge3.png>
+Package pdftex.def Info: guiding_score_ridge3.png  used on input line 563.
 (pdftex.def)             Requested size: 422.77664pt x 158.53795pt.
- [21 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge.png>] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [22 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge2.png>] [23]) [24] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux) ) 
+
+Overfull \hbox (8.46954pt too wide) in paragraph at lines 569--570
+[]\OT1/cmr/m/n/12 Figure []11[] demon-strates sig-nif-i-cant im-prove-ments across all in-di-ca-tors af-ter tun-ing $(\OML/cmm/m/it/12 ^^U[]; ^^U[]\OT1/cmr/m/n/12 )$,
+ []
+
+[24 </Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/guiding_score_ridge3.png>] [25] (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.bbl [26] [27])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 628.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 628.
+ (/Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 628.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 628.
+Package rerunfilecheck Info: File `essay.out' has not changed.
+(rerunfilecheck)             Checksum: 93369623F39905CBE63F14FD7902A7E4;2289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 628.
+ ) 
 Here is how much of TeX's memory you used:
- 4681 strings out of 492649
- 73370 string characters out of 6129622
- 143487 words of memory out of 5000000
- 8441 multiletter control sequences out of 15000+600000
- 18050 words of font info for 69 fonts, out of 8000000 for 9000
+ 8311 strings out of 492649
+ 128273 string characters out of 6129622
+ 223313 words of memory out of 5000000
+ 11943 multiletter control sequences out of 15000+600000
+ 18396 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,1212b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (24 pages, 5013318 bytes).
+ 59i,12n,94p,1217b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/tianhaozhang/Desktop/XCountryOIRPrediction/essay/essay.pdf (28 pages, 5042510 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

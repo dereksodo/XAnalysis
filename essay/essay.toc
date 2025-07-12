@@ -1,28 +1,32 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Literature Review}{3}
-\contentsline {subsection}{\numberline {2.1}Nonlinearity and Regularization in ML Forecasting}{3}
-\contentsline {subsection}{\numberline {2.2}Automating Forecasting with ML Techniques}{3}
-\contentsline {subsection}{\numberline {2.3}ML Applications in China's GDP Forecasting}{3}
-\contentsline {subsection}{\numberline {2.4}Synthesis and Implications for Current Research}{4}
-\contentsline {section}{\numberline {3}Data and Methods}{4}
-\contentsline {subsection}{\numberline {3.1}Data Source}{4}
-\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{5}
-\contentsline {subsection}{\numberline {3.3}Machine Learning Models}{5}
-\contentsline {subsection}{\numberline {3.4}Experimental Setup}{6}
-\contentsline {section}{\numberline {4}Cross-Indicator Forecasting}{7}
-\contentsline {subsection}{\numberline {4.1}Prediction Task}{7}
-\contentsline {subsection}{\numberline {4.2}Prediction Results}{7}
-\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning}{9}
-\contentsline {subsection}{\numberline {4.4}Summary}{11}
-\contentsline {section}{\numberline {5}Country-Level Time Series Forecasting}{11}
-\contentsline {subsection}{\numberline {5.1}Dataset and Feature Construction}{11}
-\contentsline {subsection}{\numberline {5.2}Models and Design Logic}{12}
-\contentsline {subsection}{\numberline {5.3}Model Comparison}{13}
-\contentsline {subsection}{\numberline {5.4}Case Study: G7 and EU}{17}
-\contentsline {subsection}{\numberline {5.5}Case Study: BRICS-5}{17}
-\contentsline {section}{\numberline {6}Bayesian Latent Structure Model for Multi-Country Economic Forecasting}{18}
-\contentsline {subsection}{\numberline {6.1}Model Motivation and Setup}{18}
-\contentsline {paragraph}{Notation and Dimensions.}{18}
-\contentsline {subsection}{\numberline {6.2}Simplified Estimation with Shared Cross-Country Influence}{20}
-\contentsline {section}{\numberline {7}Generalized Cross-Country Modeling}{22}
-\contentsline {section}{\numberline {8}Conclusion}{22}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Key Concepts: Feasibility vs.\ Interpretability}{3}{subsection.1.1}
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Deep-Learning Advances in Macroeconomic Forecasting}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Nonlinearity and Regularization in ML Forecasting}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Automating Forecasting with ML Techniques}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}ML Applications in China's GDP Forecasting}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Synthesis and Implications for Current Research}{4}{subsection.2.5}
+\contentsline {section}{\numberline {3}Data and Methods}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Data Source}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Machine Learning Models}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Experimental Setup}{6}{subsection.3.4}
+\contentsline {section}{\numberline {4}Cross-Indicator Forecasting}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Prediction Task}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Prediction Results}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Hyperparameter Tuning}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Summary}{13}{subsection.4.4}
+\contentsline {section}{\numberline {5}Country-Level Time Series Forecasting}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Dataset and Feature Construction}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Models and Design Logic}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Model Comparison}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Case Study: G7 and EU}{19}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Case Study: BRICS-5}{19}{subsection.5.5}
+\contentsline {section}{\numberline {6}Latent-Structure Ridge Model for Multi-Country Economic Forecasting}{20}{section.6}
+\contentsline {subsection}{\numberline {6.1}Model Motivation and Setup}{20}{subsection.6.1}
+\contentsline {paragraph}{Notation and Dimensions.}{20}{section*.14}
+\contentsline {subsection}{\numberline {6.2}Estimation, Tuning, and Evaluation under Shared Cross-Country Influence}{22}{subsection.6.2}
+\contentsline {section}{\numberline {7}Experimental Limitations}{24}{section.7}
+\contentsline {section}{\numberline {8}Summary and Future Work}{25}{section.8}
+\contentsline {subsection}{\numberline {8.1}Key Findings}{25}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Next Steps}{25}{subsection.8.2}

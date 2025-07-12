@@ -41,6 +41,8 @@ if not records:
     raise RuntimeError("No CSV files found – check predictions directory")
 
 df = pd.DataFrame(records)
+# Restrict evaluation window to 1970–2020
+df = df[df["year"] >= 1970]
 
 # -------------------------------------------------------- Guiding Score
 a1 = -(df["rmse_std"] - THRESH["rmse_std"]) / THRESH["rmse_std"]

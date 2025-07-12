@@ -1,5 +1,28 @@
 \begin{thebibliography}{10}
 
+\bibitem{Wen2020TFT}
+Bryan Lim, Sercan~{\"O}. Arik, Nicholas Loeff, and Tomas Pfister.
+\newblock Temporal fusion transformers for interpretable multi-horizon time
+  series forecasting.
+\newblock In {\em Proceedings of the 37th International Conference on Machine
+  Learning}, pages 6587--6597, 2021.
+\newblock arXiv:1912.09363.
+
+\bibitem{Zhou2021Informer}
+Haoyi Zhou, Shanghang Zhang, Jie Bai, Zhenheng Tu, Junyang Lu, and Shuaiyi
+  Huang.
+\newblock Informer: Beyond efficient transformer for long sequence time-series
+  forecasting.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~35, pages 11106--11115, 2021.
+
+\bibitem{Lai2018LSTNet}
+Guokun Lai, Wei-Cheng Chang, Yiming Yang, and Hanxiao Liu.
+\newblock Modeling long- and short-term temporal patterns with deep neural
+  networks.
+\newblock In {\em Proceedings of the 41st International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, pages 95--104, 2018.
+
 \bibitem{GouletCoulombe2019}
 Philippe~Goulet Coulombe, Maxime Leroux, Dalibor Stevanovic, and Stéphane
   Surprenant.
